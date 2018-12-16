@@ -42,5 +42,17 @@ client.on('message', message => {
         message.reply('no I am google not no epicgames');
       }
 });
+
+client.on('message', message => {
+    if (message.content === 'ok google when does manbundan have his birthday?') {
+        message.reply('Janurary 2nd or some shit like that');
+      }
+});
+
+client.on('message', message => {
+    if (message.content === 'ok google why is OOOPS so bad a krunker?') {
+        message.reply('Maybe he is bad but he is far better than you so if he is bad what does that make you... (hint FUCKING GARBAGE)');
+      }
+});
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
