@@ -4,7 +4,9 @@ const client = new Discord.Client();
 client.on('ready', () => {
     console.log('Google Home!');
 });
-
+function coinflip() {
+    return (Math.floor(Math.random() * 2) == 0) ? 'heads' : 'tails';
+}
 client.on('message', message => {
     if (message.content === 'ok google') {
         message.channel.send('Hello, Google Home is at your service.');
