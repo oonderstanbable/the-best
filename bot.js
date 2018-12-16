@@ -13,7 +13,7 @@ client.on('message', message => {
         message.channel.send('Hello, google home is at your service!')
     }
     
-    if (msg.content === prefix + ' WHAT IS THE WEATHER LIKE TODAY?') {
+    if (msg.content === prefix + ' what is the weather like today?') {
         message.channel.send('https://www.accuweather.com/%27')
     }
 })
