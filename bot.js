@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const prefix = 'OK GOOGLE'
+const prefix = 'Ok Google'
 
 client.on('ready', () => {
     console.log('Google Home!');
