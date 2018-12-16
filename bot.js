@@ -36,6 +36,11 @@ client.on('message', message => {
         message.reply('OBVIOUSLY A FUCKING WINDOW... DUMMY');
       }
 });
+client.on('message', message => {
+    if (message.content === 'ok google coinflip') {
+        message.reply(coinflip());
+      }
+});
 
 client.on('message', message => {
     if (message.content === 'ok google can you show me the default dance?') {
@@ -60,5 +65,6 @@ client.on('message', message => {
         message.reply('Brandor is the most gay person in yodo');
       }
 });
+
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
