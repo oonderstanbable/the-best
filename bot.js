@@ -39,7 +39,7 @@ client.on('message', message => {
       }
 });
 client.on('message', message => {
-    if (message.content === 'ok google coinflip') {
+    if (message.content === 'ok google flip a coin') {
         message.reply(coinflip());
       }
 });
