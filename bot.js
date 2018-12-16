@@ -64,7 +64,7 @@ client.on('message', message => {
 
 client.on('message', message => {
     if (message.content === 'ok google gay?') {
-        message.reply('Brandor is the most gay person in yodo');
+        message.reply('Brandor is the gayest person in the world');
       }
 });
 
