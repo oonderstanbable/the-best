@@ -2,18 +2,18 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 
 client.on('ready', () => {
-    console.log('I am ready!');
+    console.log('Google Home!');
 });
 
 client.on('message', message => {
-    if (message.content === 'ping') {
-    	message.channel.send('PONG!');
+    if (message.content === 'ok google') {
+    	message.channel.send('Hello google home is at your service');
   	}
 });
 
 client.on('message', message => {
-    if (message.content === 'bing') {
-    	message.reply('BONG!');
+    if (message.content === 'ok google what is the weather like today?') {
+    	message.reply('https://www.accuweather.com/');
   	}
 });
 
