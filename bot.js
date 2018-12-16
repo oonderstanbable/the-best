@@ -57,7 +57,7 @@ client.on('message', message => {
 
 client.on('message', message => {
     if (message.content === 'ok google gay?') {
-        message.reply('Its just brandor');
+        message.reply('Brandor is the most gay person in yodo');
       }
 });
 // THIS  MUST  BE  THIS  WAY
