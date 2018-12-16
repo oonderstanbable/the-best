@@ -7,7 +7,7 @@ client.on('ready', () => {
 
 client.on('message', message => {
     if (message.content === 'ok google') {
-        message.channel.send('Hello google home is at your service');
+        message.channel.send('Hello, Google Home is at your service');
       }
 });
 
@@ -27,7 +27,7 @@ client.on('message', message => {
 
 client.on('message', message => {
     if (message.content === 'ok google set a reminder?') {
-        message.reply('No im not gonna do that what do you think I am... Google home or something... set your own reminder');
+        message.reply('No im not gonna do that what do you think I am... Google Home or something... set your own reminder');
       }
 });
 
