@@ -7,7 +7,7 @@ client.on('ready', () => {
 
 client.on('message', message => {
     if (message.content === 'ok google') {
-        message.channel.send('Hello, Google Home is at your service');
+        message.channel.send('Hello, Google Home is at your service.');
       }
 });
 
@@ -52,6 +52,12 @@ client.on('message', message => {
 client.on('message', message => {
     if (message.content === 'ok google why is OOOPS so bad a krunker?') {
         message.reply('Maybe he is bad but he is far better than you so if he is bad what does that make you... (hint FUCKING GARBAGE)');
+      }
+});
+
+client.on('message', message => {
+    if (message.content === 'ok google gay?') {
+        message.reply('Its just brandor');
       }
 });
 // THIS  MUST  BE  THIS  WAY
