@@ -49,7 +49,7 @@ client.on('message', message => {
 
 //client.on('message', message => {
 //    if (message.content === 'ok google magic 8 ball') {
-        message.reply(ball());
+//        message.reply(ball());
 //      }
 //});
 
