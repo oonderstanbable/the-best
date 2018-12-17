@@ -68,5 +68,16 @@ client.on('message', message => {
       }
 });
 
+client.on('message', message => {
+    if (message.content === 'ok google help?') {
+        message.reply('This is in beta OOOPS is working on it');
+      }
+});
+
+client.on('message', message => {
+    if (message.content === 'ok google twitter?') {
+        message.reply('https://twitter.com/OOnderstandable');
+      }
+});
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
