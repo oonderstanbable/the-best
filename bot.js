@@ -40,6 +40,7 @@ client.on('message', message => {
         + "ok google flip a coin\n"
         + "ok google twitter?\n"
         + "ok google ball\n"
+        + "ok google what is # +/*- # (make sure to put in the spaces before operation and after\n"
         + "```");
     }
 });
