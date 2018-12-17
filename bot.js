@@ -7,6 +7,9 @@ client.on('ready', () => {
 function coinflip() {
     return (Math.floor(Math.random() * 2) == 0) ? 'heads' : 'tails';
 }
+function ball() {
+    return (Math.floor(Math.random() * 8) == 0) ? 'penis' : 'please try again' : 'nah man I will not answer you' : 'get out of my face' : 'you are beautiful just the way you are' : 'you are loved by OOOPS' : 'you will be banned from this server one day' : 'you are gay';
+}
 client.on('message', message => {
     if (message.content === 'ok google') {
         message.channel.send('Hello, Google Home is at your service.');
@@ -41,6 +44,12 @@ client.on('message', message => {
 client.on('message', message => {
     if (message.content === 'ok google flip a coin') {
         message.reply(coinflip());
+      }
+});
+
+client.on('message', message => {
+    if (message.content === 'ok google magic 8 ball') {
+        message.reply(ball());
       }
 });
 
