@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 const urban = require('urban.js');
 
-client.on('ready', function(){
+client.on('ready', () => {
     console.log('Google Home!');
 });
 function coinflip() {
