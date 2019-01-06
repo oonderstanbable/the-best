@@ -2,6 +2,10 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 const urban = require('urban.js');
 
+client.on('ready', () => {
+    console.log('Google Home!');
+});
+
 function coinflip() {
     return (Math.floor(Math.random() * 2) == 0) ? 'heads' : 'tails';
 }
@@ -112,14 +116,14 @@ client.on('message', message => {
     }
 });
 
-client.on('message', message => {
+/*client.on('message', message => {
     if (tL(message.content.slice(0,15)) === 'ok google urban') {
         urban(tL(message.content).slice(15)).then(function(value) {
         wordArray = JSON.parse(JSON.stringify(value));
         message.channel.send({"embed":{"color":15229474,"fields":[{"name":"Word:","value":cL(wordArray['word'])},{"name":"Definition:","value":cL(wordArray['definition'])},{"name":"Example:","value":cL(wordArray['example'])}]}});
         });
     }
-});
+});*/
 
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
