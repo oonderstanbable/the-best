@@ -4,7 +4,6 @@ const urban = require('urban.js');
 
 client.on('ready', function(){
     console.log('Google Home!');
-    client.user.setActivity('Do ok google help for commands!');
 });
 function coinflip() {
     return (Math.floor(Math.random() * 2) == 0) ? 'heads' : 'tails';
