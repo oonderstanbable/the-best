@@ -2,9 +2,6 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 const urban = require('urban.js');
 
-client.on('ready', () => {
-    console.log('Google Home!');
-});
 function coinflip() {
     return (Math.floor(Math.random() * 2) == 0) ? 'heads' : 'tails';
 }
