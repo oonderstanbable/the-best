@@ -7,7 +7,7 @@ client.on('ready', () => {
 });
 
 client.on("guildMemberAdd", function(member) {
-    let role = member.guild.roles.find("name", "RoleName");
+    let role = member.guild.roles.find("name", "Members");
     member.addRole(role).catch(console.error);
 });
 
