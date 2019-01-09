@@ -6,6 +6,11 @@ client.on('ready', () => {
     console.log('Google Home!');
 });
 
+client.on("guildMemberAdd", function(member) {
+    let role = member.guild.roles.find("name", "RoleName");
+    member.addRole(role).catch(console.error);
+});
+
 function coinflip() {
     return (Math.floor(Math.random() * 2) == 0) ? 'heads' : 'tails';
 }
