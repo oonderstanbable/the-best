@@ -36,9 +36,10 @@ client.on('message', message => {
 
 client.on("message",a=>{mV=a.content.split(" "),mV.length>=7&&"ok google what is"==tL(a.content.slice(0,17))&&iN(mV[4])&&iO(mV[5])&&iN(mV[6])&&a.channel.send(Math.round(1e4*mC[mV[5]](parseInt(mV[4]),parseInt(mV[6])))/1e4)});
 
-client.on('message', message => {
-    if (tL(message.content) === 'ok google help') {
-        message.author.send("```ok google\n"
+        let embed = new Discord.RichEmbed()
+        .setColor(0x4286f4)
+        .addField("Hey, I'm Google home bot", "welcome")
+        .addField("Commands Available:", "```ok google\n"
         + "ok google what is the weather like today?\n"
         + "ok google what is 4 + 8\n"
         + "ok google help\n"
@@ -53,6 +54,9 @@ client.on('message', message => {
         + "ok google gay?\n"
         + "ok google help?\n"
         + "ok google twitter?```");
+client.on('message', message => {
+    if (tL(message.content) === 'ok google help') {
+        message.author.sendEmbed(embed);
     }
 });
 
