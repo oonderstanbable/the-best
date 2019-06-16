@@ -15,7 +15,7 @@ bot.on('ready', () => {
             type: "STREAMING",
             url: "https://www.twitch.tv/teamera"
         }
-    })
+    });
 
 
 function coinflip() {
