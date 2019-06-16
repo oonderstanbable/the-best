@@ -32,7 +32,7 @@ client.on("message",a=>{mV=a.content.split(" "),mV.length>=7&&"era what is"==tL(
         + "era flip a coin\n"
         + "era ball\n"
         + "era twitter```")
-        .addField("OAuth2 Link:**", "https://discordapp.com/api/oauth2/authorize?client_id=589092675228270600&permissions=8&scope=bot")
+        .addField("**OAuth2 Link:**", "https://discordapp.com/api/oauth2/authorize?client_id=589092675228270600&permissions=8&scope=bot")
 client.on('message', message => {
     if (tL(message.content) === 'era help') {
         message.author.sendEmbed(embed);
