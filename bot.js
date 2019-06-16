@@ -68,7 +68,7 @@ client.on('message', message => {
         .addField("**OAuth2 Link:**", "https://discordapp.com/api/oauth2/authorize?client_id=589092675228270600&permissions=8&scope=bot")
 client.on('message', message => {
     if (tL(message.content) === 'era invite') {
-        message.autor.sendEmbed(embed);
+        message.author.sendEmbed(embed);
     }
 });
 // THIS  MUST  BE  THIS  WAY
