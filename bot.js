@@ -62,14 +62,11 @@ client.on('message', message => {
     }
 });
 
-        let embed = new Discord.RichEmbed()
-        .setColor(0x4286f4)
-        .addField("**Official Discord link:**", "https://discord.gg/x3d8Ajh")
-        .addField("**OAuth2 link:**", "https://discordapp.com/api/oauth2/authorize?client_id=589092675228270600&permissions=8&scope=bot\n");
 client.on('message', message => {
-    if (tL(message.content) === 'era help') {
-        message.reply.sendEmbed(embed);
+    if (tL(message.content) === 'era invite') {
+        message.reply('**Official Discord Invite Link:** https://discord.gg/x3d8Ajh','**Bot Invite Link:** https://discordapp.com/api/oauth2/authorize?client_id=589092675228270600&permissions=8&scope=bot');
     }
 });
+
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
