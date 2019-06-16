@@ -3,6 +3,8 @@ const client = new Discord.Client();
 
 client.on('ready', () => {
     console.log('era clan!');
+    bot.user.setStatus('dnd')
+    bot.user.setGame('era help for help')
 });
 
 
