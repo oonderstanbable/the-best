@@ -3,7 +3,7 @@ const client = new Discord.Client();
  
 client.on('ready' , () => {
  
-    client.user.setStatus('dnd')
+    client.user.setStatus('idle')
    // client.user.setActivity('type era help for help')
  
 });
@@ -47,7 +47,7 @@ client.on('message', message => {
  
         let clan = new Discord.RichEmbed()
         .setColor(0x4286f4)
-        .addField("**Clan Level**", "68")
+        .addField("**Clan Level**", "69")
         .addField("**Clan Members:**", "OOOPS (leader)\n"
         + "awesompuppy\n"
         + "boB_\n"
