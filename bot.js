@@ -1,44 +1,34 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-
-/*client.on('ready', () => {
-    console.log('era clan!');
-    bot.user.setStatus('dnd')
-    bot.user.setGame('era help for help')
-});*/
-
-client.on('ready', () => {
-    bot.user.setStatus('dnd')
-    bot.user.setPresence({
-        game: {
-            name: 'era help for help',
-            type: "STREAMING",
-            url: "https://www.twitch.tv/teamera"
-        }
-    });
-
-
+ 
+client.on('ready' , () => {
+ 
+    client.user.setStatus('dnd')
+    client.user.setActivity('Era Help for help')
+ 
+});
+ 
 function coinflip() {
     return (Math.floor(Math.random() * 2) == 0) ? 'heads' : 'tails';
 }
-    
+   
 function ball() {
     choices = ["||penis||","era is the best clan","#era gang","get out of my face","you are beautiful just the way you are","you are loved by OOOPS","you will be banned from this server one day","you are gay"];
     return choices[Math.floor(Math.random() * 8)];
 }
-    
+   
 function iN(a){return/^\d+$/.test(a);}function iO(a){return a.match('^[/*+-]{1}$')==null?!1:!0;}mC={'/':function(a,b){return a/b;},'*':function(a,b){return a*b;},'-':function(a,b){return a-b;},'+':function(a,b){return a+b;}};
 function cL(a){return a.replace(/[\[\]]/g, "");}
 function tL(a){return a.toLowerCase();}
-
+ 
 client.on('message', message => {
     if (tL(message.content) === 'era') {
         message.channel.send('Hello, era bot is at your service.');
     }
 });
-
+ 
 client.on("message",a=>{mV=a.content.split(" "),mV.length>=7&&"era"==tL(a.content.slice(0,17))&&iN(mV[4])&&iO(mV[5])&&iN(mV[6])&&a.channel.send(Math.round(1e4*mC[mV[5]](parseInt(mV[4]),parseInt(mV[6])))/1e4)});
-
+ 
         let embed = new Discord.RichEmbed()
         .setColor(0x4286f4)
         .addField("Hey, I'm era bot", "**Discord link:** https://discord.gg/x3d8Ajh")
@@ -54,7 +44,7 @@ client.on('message', message => {
         message.author.sendEmbed(embed);
     }
 });
-
+ 
         let clan = new Discord.RichEmbed()
         .setColor(0x4286f4)
         .addField("**Clan Level**", "68")
@@ -79,30 +69,30 @@ client.on('message', message => {
         message.channel.sendEmbed(clan);
     }
 });
-
+ 
 client.on('message', message => {
     if (tL(message.content) === 'era flip a coin') {
         message.reply(coinflip());
     }
 });
-
+ 
 client.on('message', message => {
     if (tL(message.content) === 'era ball') {
         message.reply(ball());
     }
 });
-
+ 
 client.on('message', message => {
     if (tL(message.content) === 'era gay') {
         message.reply('Sonder is the gayest person in the world');
     }
 });
-
+ 
 client.on('message', message => {
     if (tL(message.content) === 'era twitter') {
         message.reply('https://twitter.com/OOnderstandable');
     }
 });
-
-// THIS  MUST  BE  THIS  WAY
+ 
+ 
 client.login(process.env.BOT_TOKEN);
