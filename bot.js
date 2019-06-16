@@ -1,11 +1,21 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 
-client.on('ready', () => {
+/*client.on('ready', () => {
     console.log('era clan!');
     bot.user.setStatus('dnd')
     bot.user.setGame('era help for help')
-});
+});*/
+
+bot.on('ready', () => {
+    bot.user.setStatus('dnd')
+    bot.user.setPresence({
+        game: {
+            name: 'era help for help',
+            type: "STREAMING",
+            url: "https://www.twitch.tv/teamera"
+        }
+    })
 
 
 function coinflip() {
