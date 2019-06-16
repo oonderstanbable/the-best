@@ -27,7 +27,7 @@ client.on("message",a=>{mV=a.content.split(" "),mV.length>=7&&"ok google what is
 
         let embed = new Discord.RichEmbed()
         .setColor(0x4286f4)
-        .addField("Hey, I'm era bot", "**Discord link:**https://discord.gg/x3d8Ajh")
+        .addField("Hey, I'm era bot", "**Discord link:** https://discord.gg/x3d8Ajh")
         .addField("Commands Available:", "```era\n"
         + "era flip a coin\n"
         + "era ball\n"
