@@ -32,6 +32,7 @@ client.on("message",a=>{mV=a.content.split(" "),mV.length>=7&&"era"==tL(a.conten
         + "era flip a coin\n"
         + "era ball\n"
         + "era clan\n"
+        + "era gay\n"
         + "era twitter```")
         .addField("**OAuth2 Link:**", "https://discordapp.com/api/oauth2/authorize?client_id=589092675228270600&permissions=8&scope=bot")
 client.on('message', message => {
