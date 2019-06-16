@@ -41,7 +41,7 @@ client.on('message', message => {
 });
 
         let clan = new Discord.RichEmbed()
-        .setColor(9731e0)
+        .setColor(660066)
         .addField("**Clan Level**", "68")
         .addField("**Clan Members:**", "OOOPS (leader)\n"
         + "awesompuppy\n"
