@@ -39,6 +39,33 @@ client.on('message', message => {
     }
 });
 
+        let embed = new Discord.RichEmbed()
+        .setColor(0x4286f4)
+        .addField("**Clan Level**", "68")
+        .addField("**Clan Members:**", "OOOPS (leader)\n"
+        + "awesompuppy\n"
+        + "boB_\n"
+        + "rylentless\n"
+        + "C4ndymon\n"
+        + "Spyrosh\n"
+        + "NBG Rain\n"
+        + "Constrained\n"
+        + "ItsCostco\n"
+        + "Dalzik\n"
+        + "evbg\n"
+        + "Hunnids\n"
+        + "Wheet\n"
+        + "KenjiFTW\n"
+        + "ripmain\n"
+        + "eonsapart\n"
+                  ")
+        .addField("**OAuth2 Link:**", "https://discordapp.com/api/oauth2/authorize?client_id=589092675228270600&permissions=8&scope=bot")
+client.on('message', message => {
+    if (tL(message.content) === 'era help') {
+        message.channel.sendEmbed(embed);
+    }
+});
+
 client.on('message', message => {
     if (tL(message.content) === 'era flip a coin') {
         message.reply(coinflip());
