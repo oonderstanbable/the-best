@@ -3,7 +3,7 @@ const client = new Discord.Client();
 //const urban = require('urban.js');
 
 client.on('ready', () => {
-    console.log('Google Home!');
+    console.log('era clan!');
 });
 
 client.on("guildMemberAdd", function(member) {
@@ -23,14 +23,8 @@ function cL(a){return a.replace(/[\[\]]/g, "");}
 function tL(a){return a.toLowerCase();}
 
 client.on('message', message => {
-    if (tL(message.content) === 'ok google') {
-        message.channel.send('Hello, Google Home is at your service.');
-    }
-});
-
-client.on('message', message => {
-    if (tL(message.content) === 'ok google what is the weather like today?') {
-        message.reply('https://www.accuweather.com/');
+    if (tL(message.content) === 'era') {
+        message.channel.send('Hello, era bot is at your service.');
     }
 });
 
@@ -39,88 +33,51 @@ client.on("message",a=>{mV=a.content.split(" "),mV.length>=7&&"ok google what is
         let embed = new Discord.RichEmbed()
         .setColor(0x4286f4)
         .addField("Hey, I'm Google home bot", "welcome")
-        .addField("Commands Available:", "```ok google\n"
-        + "ok google what is the weather like today?\n"
-        + "ok google what is 4 + 8\n"
-        + "ok google help\n"
-        + "ok google when does OOOPS have a birthday?\n"
-        + "ok google set a reminder?\n"
-        + "ok google what is 1 + 1?\n"
-        + "ok google flip a coin\n"
-        + "ok google ball\n"
-        + "ok google can you show me the default dance?\n"
-        + "ok google when does manbundan have his birthday?\n"
-        + "ok google why is OOOPS so bad a krunker?\n"
-        + "ok google gay?\n"
-        + "ok google help?\n"
-        + "ok google twitter?```");
+        .addField("Commands Available:", "```era\n"
+        + "era flip a coin\n"
+        + "era ball\n"
+        + "era why is OOOPS so bad a krunker?\n"
+        + "era gay?\n"
+        + "era twitter?```");
 client.on('message', message => {
-    if (tL(message.content) === 'ok google help') {
+    if (tL(message.content) === 'era help') {
         message.author.sendEmbed(embed);
     }
 });
 
 client.on('message', message => {
-    if (tL(message.content) === 'ok google when does OOOPS have a birthday?') {
+    if (tL(message.content) === 'era when does OOOPS have his birthday?') {
         message.reply('OOOPS has a birthday on November 3rd every year... like your birthday should be...');
     }
 });
 
 client.on('message', message => {
-    if (tL(message.content) === 'ok google set a reminder?') {
-        message.reply('No im not gonna do that what do you think I am... Google Home or something... set your own reminder');
-    }
-});
-
-client.on('message', message => {
-    if (tL(message.content) === 'ok google what is 1 + 1?') {
-        message.reply('OBVIOUSLY A FUCKING WINDOW... DUMMY');
-    }
-});
-client.on('message', message => {
-    if (tL(message.content) === 'ok google flip a coin') {
+    if (tL(message.content) === 'era flip a coin') {
         message.reply(coinflip());
     }
 });
 
 client.on('message', message => {
-    if (tL(message.content) === 'ok google ball') {
+    if (tL(message.content) === 'era ball') {
         message.reply(ball());
     }
 });
 
-client.on('message', message => {
-    if (tL(message.content) === 'ok google can you show me the default dance?') {
-        message.reply('no I am google not no epicgames');
-    }
-});
 
 client.on('message', message => {
-    if (tL(message.content) === 'ok google when does manbundan have his birthday?') {
-        message.reply('Janurary 2nd or some shit like that');
-    }
-});
-
-client.on('message', message => {
-    if (tL(message.content) === 'ok google why is OOOPS so bad a krunker?') {
+    if (tL(message.content) === 'era why is OOOPS so bad a krunker?') {
         message.reply('Maybe he is bad but he is far better than you so if he is bad what does that make you... (hint FUCKING GARBAGE)');
     }
 });
 
 client.on('message', message => {
-    if (tL(message.content) === 'ok google gay?') {
-        message.reply('Brandor is the gayest person in the world');
+    if (tL(message.content) === 'era gay?') {
+        message.reply('Sonder is the gayest person in the world');
     }
 });
 
 client.on('message', message => {
-    if (tL(message.content) === 'ok google help?') {
-        message.reply('This is in beta OOOPS is working on it');
-    }
-});
-
-client.on('message', message => {
-    if (tL(message.content) === 'ok google twitter?') {
+    if (tL(message.content) === 'era twitter?') {
         message.reply('https://twitter.com/OOnderstandable');
     }
 });
