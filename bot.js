@@ -61,7 +61,7 @@ client.on('message', message => {
 
 client.on('message', message => {
     if (tL(message.content) === 'era why is OOOPS so bad a krunker?') {
-        message.reply('Maybe he is bad but he is far better than you so if he is bad what does that make you... (hint FUCKING GARBAGE)');
+        message.reply('There is no need for the leader to be as god tier as his comp teams');
     }
 });
 
