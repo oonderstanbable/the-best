@@ -31,7 +31,8 @@ client.on("message",a=>{mV=a.content.split(" "),mV.length>=7&&"era what is"==tL(
         .addField("Commands Available:", "```era\n"
         + "era flip a coin\n"
         + "era ball\n"
-        + "era twitter```");
+        + "era twitter```")
+        .addField("OAuth2 Link:**", "https://discordapp.com/api/oauth2/authorize?client_id=589092675228270600&permissions=8&scope=bot")
 client.on('message', message => {
     if (tL(message.content) === 'era help') {
         message.author.sendEmbed(embed);
@@ -62,14 +63,5 @@ client.on('message', message => {
     }
 });
 
-        let embed = new Discord.RichEmbed()
-        .setColor(0x4286f4)
-        .addField("**era Official Discord Link:**", "https://discord.gg/x3d8Ajh")
-        .addField("**OAuth2 Link:**", "https://discordapp.com/api/oauth2/authorize?client_id=589092675228270600&permissions=8&scope=bot")
-client.on('message', message => {
-    if (tL(message.content) === 'era invite') {
-        message.author.sendEmbed(embed);
-    }
-});
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
