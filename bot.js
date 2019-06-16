@@ -31,8 +31,9 @@ client.on("message",a=>{mV=a.content.split(" "),mV.length>=7&&"ok google what is
         .addField("Commands Available:", "```era\n"
         + "era flip a coin\n"
         + "era ball\n"
-        + "era why is OOOPS so bad a krunker?\n"
+        + "era why is OOOPS so bad a krunker\n"
         + "era gay\n"
+        + "era when does OOOPS have his birthday\n"
         + "era twitter```");
 client.on('message', message => {
     if (tL(message.content) === 'era help') {
@@ -41,7 +42,7 @@ client.on('message', message => {
 });
 
 client.on('message', message => {
-    if (tL(message.content) === 'era when does OOOPS have his birthday?') {
+    if (tL(message.content) === 'era when does OOOPS have his birthday') {
         message.reply('OOOPS has a birthday on November 3rd every year... like your birthday should be...');
     }
 });
@@ -60,7 +61,7 @@ client.on('message', message => {
 
 
 client.on('message', message => {
-    if (tL(message.content) === 'era why is OOOPS so bad a krunker?') {
+    if (tL(message.content) === 'era why is OOOPS so bad a krunker') {
         message.reply('There is no need for the leader to be as god tier as his comp teams');
     }
 });
