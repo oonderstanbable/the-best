@@ -28,12 +28,12 @@ client.on("message",a=>{mV=a.content.split(" "),mV.length>=7&&"era"==tL(a.conten
         let embed = new Discord.RichEmbed()
         .setColor(0x4286f4)
         .addField("Hey, I'm era bot", "**Discord link:** https://discord.gg/x3d8Ajh")
-        .addField("Commands Available:", "```era\n"
-        + "era flip a coin\n"
-        + "era ball\n"
-        + "era clan\n"
-        + "era gay\n"
-        + "era twitter```")
+        .addField("Commands Available:", "```-era\n"
+        + "-era flip a coin\n"
+        + "-era ball\n"
+        + "-era clan\n"
+        + "-era gay\n"
+        + "-era twitter```")
         .addField("**OAuth2 Link:**", "https://discordapp.com/api/oauth2/authorize?client_id=589092675228270600&permissions=8&scope=bot")
 client.on('message', message => {
     if (tL(message.content) === 'era help') {
