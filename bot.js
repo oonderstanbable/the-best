@@ -7,7 +7,7 @@ const client = new Discord.Client();
     bot.user.setGame('era help for help')
 });*/
 
-bot.on('ready', () => {
+client.on('ready', () => {
     bot.user.setStatus('dnd')
     bot.user.setPresence({
         game: {
@@ -21,10 +21,12 @@ bot.on('ready', () => {
 function coinflip() {
     return (Math.floor(Math.random() * 2) == 0) ? 'heads' : 'tails';
 }
+    
 function ball() {
     choices = ["||penis||","era is the best clan","#era gang","get out of my face","you are beautiful just the way you are","you are loved by OOOPS","you will be banned from this server one day","you are gay"];
     return choices[Math.floor(Math.random() * 8)];
 }
+    
 function iN(a){return/^\d+$/.test(a);}function iO(a){return a.match('^[/*+-]{1}$')==null?!1:!0;}mC={'/':function(a,b){return a/b;},'*':function(a,b){return a*b;},'-':function(a,b){return a-b;},'+':function(a,b){return a+b;}};
 function cL(a){return a.replace(/[\[\]]/g, "");}
 function tL(a){return a.toLowerCase();}
