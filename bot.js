@@ -40,7 +40,7 @@ client.on('message', message => {
     }
 });
 
-        let embed = new Discord.RichEmbed()
+        let clan = new Discord.RichEmbed()
         .setColor(0x4286f4)
         .addField("**Clan Level**", "68")
         .addField("**Clan Members:**", "OOOPS (leader)\n"
@@ -61,7 +61,7 @@ client.on('message', message => {
         + "eonsapart\n")
 client.on('message', message => {
     if (tL(message.content) === 'era clan') {
-        message.channel.sendEmbed(embed);
+        message.channel.sendEmbed(clan);
     }
 });
 
