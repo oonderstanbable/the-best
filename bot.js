@@ -23,7 +23,7 @@ client.on('message', message => {
     }
 });
 
-client.on("message",a=>{mV=a.content.split(" "),mV.length>=7&&"era what is"==tL(a.content.slice(0,17))&&iN(mV[4])&&iO(mV[5])&&iN(mV[6])&&a.channel.send(Math.round(1e4*mC[mV[5]](parseInt(mV[4]),parseInt(mV[6])))/1e4)});
+client.on("message",a=>{mV=a.content.split(" "),mV.length>=7&&"era"==tL(a.content.slice(0,17))&&iN(mV[4])&&iO(mV[5])&&iN(mV[6])&&a.channel.send(Math.round(1e4*mC[mV[5]](parseInt(mV[4]),parseInt(mV[6])))/1e4)});
 
         let embed = new Discord.RichEmbed()
         .setColor(0x4286f4)
