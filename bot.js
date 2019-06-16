@@ -64,7 +64,7 @@ client.on('message', message => {
 
 client.on('message', message => {
     if (tL(message.content) === 'era invite') {
-        reply('**Official Discord Invite Link:** https://discord.gg/x3d8Ajh','**Bot Invite Link:** https://discordapp.com/api/oauth2/authorize?client_id=589092675228270600&permissions=8&scope=bot');
+        message.reply('**Official Discord Invite Link:** https://discord.gg/x3d8Ajh','**Bot Invite Link:** https://discordapp.com/api/oauth2/authorize?client_id=589092675228270600&permissions=8&scope=bot');
     }
 });
 
