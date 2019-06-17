@@ -68,11 +68,12 @@ message.channel.sendEmbed(clan);
 
 let mia = new Discord.RichEmbed()
 .setColor(0x4286f4)
-.addField("**era Miami Comp Team**", "")
+.addField("**__era Miami Comp Team__**", "")
 .addField("**__Miami Competitive Record__**", "```diff\n"
 + "+\n"
 + "-\n"
 + "```\n")
+.addField("**")
 client.on('message', message => {
 if (tL(message.content) === 'era mia') {
 message.channel.sendEmbed(mia);
@@ -81,7 +82,7 @@ message.channel.sendEmbed(mia);
 
 let sv = new Discord.RichEmbed()
 .setColor(0x4286f4)
-.addField("**era Silicon Valley Comp Team**", "```ini"
+.addField("**era Silicon Valley Comp Team**", "```ini\n"
 +"- Sonder [Leader]\n"
 +"- boB_\n"
 +"- spyrosh\n"
