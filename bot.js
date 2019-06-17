@@ -1,4 +1,3 @@
-
 const Discord = require('discord.js');
 const client = new Discord.Client();
 client.on('ready' , () => {
@@ -68,7 +67,20 @@ message.channel.sendEmbed(clan);
 
 let mia = new Discord.RichEmbed()
 .setColor(0x4286f4)
-.addField("**__era Miami Comp Team__**", "")
+.addField("**__Miami Comp Team #1__**", "```ini\n"
++"- rylentless [Leader]\n"
++"- evbg\n"
++"- hunnids\n"
++"- Constrained\n"
++"; NBG Rain(sub)\n"
++"```\n")
+.addField("**__Miami Competitive Roster #2__**","```ini\n"
++"-\n" 
++"- NBG Rain\n"
++"- !*^\n"
++"-\n"
++"; (sub)\n"
++"```")
 .addField("**__Miami Competitive Record__**", "```diff\n"
 + "+\n"
 + "-\n"
@@ -82,7 +94,7 @@ message.channel.sendEmbed(mia);
 
 let sv = new Discord.RichEmbed()
 .setColor(0x4286f4)
-.addField("**era Silicon Valley Comp Team**", "```ini\n"
+.addField("**__Silicon Valley Comp Team__**", "```ini\n"
 +"- Sonder [Leader]\n"
 +"- boB_\n"
 +"- spyrosh\n"
