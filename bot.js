@@ -115,6 +115,25 @@ message.channel.sendEmbed(sv);
     }
 });
 
+let fra = new Discord.RichEmbed()
+.setColor(0x4286f4)
+.addField("**__Frankfurt Comp Team #1__**", "```ini\n"
++"-  [Leader]\n"
++"- \n"
++"- \n"
++"- \n"
++"; (sub)\n"
++"```\n")
+.addField("**__Frankfurt Competitive Record__**", "```diff\n"
++ "+\n"
++ "-\n"
++ "```\n")
+client.on('message', message => {
+if (tL(message.content) === 'era fra') {
+message.channel.sendEmbed(fra);
+    }
+});
+
 client.on('message', message => {
 if (tL(message.content) === 'era flip a coin') {
 message.reply(coinflip());
