@@ -3,7 +3,7 @@ const client = new Discord.Client();
  
 client.on('ready' , () => {
  
-    client.user.setStatus('idle')
+    client.user.setStatus('Online')
    // client.user.setActivity('type era help for help')
  
 });
