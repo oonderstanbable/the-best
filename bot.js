@@ -100,7 +100,7 @@ let sv = new Discord.RichEmbed()
 +"- Malihboo\n"
 +"; eonsapart(sub)\n"
 +"; C4ndymon(sub)\n"
-+"; ```\n")
++"```\n")
 .addField("**__Silicon Valley Competitive Record__**", "```diff\n"
 + "+ era-20,000 / JUG$-7,365\n"
 + "+ era-28,040 / The Pick-ups-27,515\n"
