@@ -65,7 +65,7 @@ client.on('message', message => {
         + "ripmain\n"
         + "eonsapart\n"
         + "b3nnyb0i\n")
-        + "sean\n")
+        + "sean")
 client.on('message', message => {
     if (tL(message.content) === 'era clan') {
         message.channel.sendEmbed(clan);
