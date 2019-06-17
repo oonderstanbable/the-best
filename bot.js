@@ -66,7 +66,7 @@ message.channel.sendEmbed(clan);
     }
 });
 
-let clan = new Discord.RichEmbed()
+let mia = new Discord.RichEmbed()
 .setColor(0x4286f4)
 .addField("**era Miami Comp Team**", "")
 .addField("**__Miami Competitive Record__**", "```diff\n"
@@ -79,7 +79,7 @@ message.channel.sendEmbed(mia);
     }
 });
 
-let clan = new Discord.RichEmbed()
+let sv = new Discord.RichEmbed()
 .setColor(0x4286f4)
 .addField("**era Silicon Valley Comp Team**", "```ini"
 +"- Sonder [Leader]\n"
