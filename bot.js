@@ -117,7 +117,7 @@ message.channel.sendEmbed(sv);
 
 let fra = new Discord.RichEmbed()
 .setColor(0x4286f4)
-.addField("**__Frankfurt Comp Team #1__**", "```ini\n"
+.addField("**__Frankfurt Comp Team__**", "```ini\n"
 +"-  [Leader]\n"
 +"- \n"
 +"- \n"
