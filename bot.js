@@ -15,11 +15,13 @@ return choices[Math.floor(Math.random() * 8)];
 function iN(a){return/^\d+$/.test(a);}function iO(a){return a.match('^[/*+-]{1}$')==null?!1:!0;}mC={'/':function(a,b){return a/b;},'*':function(a,b){return a*b;},'-':function(a,b){return a-b;},'+':function(a,b){return a+b;}};
 function cL(a){return a.replace(/[\[\]]/g, "");}
 function tL(a){return a.toLowerCase();}
+
 client.on('message', message => {
 if (tL(message.content) === 'era') {
 message.channel.send('Hello, era bot is at your service.');
-}
+    }
 });
+
 client.on("message",a=>{mV=a.content.split(" "),mV.length>=7&&"era"==tL(a.content.slice(0,17))&&iN(mV[4])&&iO(mV[5])&&iN(mV[6])&&a.channel.send(Math.round(1e4*mC[mV[5]](parseInt(mV[4]),parseInt(mV[6])))/1e4)});
 let embed = new Discord.RichEmbed()
 .setColor(0x4286f4)
@@ -34,8 +36,9 @@ let embed = new Discord.RichEmbed()
 client.on('message', message => {
 if (tL(message.content) === 'era help') {
 message.author.sendEmbed(embed);
-}
+    }
 });
+
 let clan = new Discord.RichEmbed()
 .setColor(0x4286f4)
 .addField("**Clan Level**", "71")
@@ -60,26 +63,68 @@ let clan = new Discord.RichEmbed()
 client.on('message', message => {
 if (tL(message.content) === 'era clan') {
 message.channel.sendEmbed(clan);
-}
+    }
 });
+
+let clan = new Discord.RichEmbed()
+.setColor(0x4286f4)
+.addField("**era Miami Comp Team**", "")
+.addField("**__Miami Competitive Record__**", "```diff\n"
++ "+\n"
++ "-\n"
++ "```\n")
+client.on('message', message => {
+if (tL(message.content) === 'era mia') {
+message.channel.sendEmbed(mia);
+    }
+});
+
+let clan = new Discord.RichEmbed()
+.setColor(0x4286f4)
+.addField("**era Silicon Valley Comp Team**", "```ini"
++"- Sonder [Leader]\n"
++"- boB_\n"
++"- spyrosh\n"
++"- Malihboo\n"
++"; eonsapart(sub)\n"
++"; C4ndymon(sub)\n"
++"; ```\n")
+.addField("**__Silicon Valley Competitive Record__**", "```diff\n"
++ "+ era-20,000 / JUG$-7,365\n"
++ "+ era-28,040 / The Pick-ups-27,515\n"
++ "+ era-14,800 / LUHH-10,000\n"
++ "+ era-15,000 / 悪魔-10,665\n"
++ "+ era-20,000 / Dyna-8,600\n"
++ "+ era-42,375  / verb-27,715\n"
++ "```\n")
+client.on('message', message => {
+if (tL(message.content) === 'era sv') {
+message.channel.sendEmbed(sv);
+    }
+});
+
 client.on('message', message => {
 if (tL(message.content) === 'era flip a coin') {
 message.reply(coinflip());
-}
+    }
 });
+
 client.on('message', message => {
 if (tL(message.content) === 'era ball') {
 message.reply(ball());
-}
+    }
 });
+
 client.on('message', message => {
 if (tL(message.content) === 'era gay') {
 message.reply('Sonder is the gayest person in the world');
-}
+    }
 });
+
 client.on('message', message => {
 if (tL(message.content) === 'era twitter') {
 message.reply('https://twitter.com/OOnderstandable');
-}
+    }
 });
+
 client.login(process.env.BOT_TOKEN);
