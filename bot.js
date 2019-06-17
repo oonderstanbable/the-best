@@ -75,9 +75,9 @@ let mia = new Discord.RichEmbed()
 +"; NBG Rain(sub)\n"
 +"```\n")
 .addField("**__Miami Competitive Roster #2__**","```ini\n"
-+"-\n" 
-+"- NBG Rain\n"
++"-NBG Rain [Leader]\n" 
 +"- !*^\n"
++"- \n"
 +"-\n"
 +"; (sub)\n"
 +"```")
@@ -85,7 +85,6 @@ let mia = new Discord.RichEmbed()
 + "+\n"
 + "-\n"
 + "```\n")
-.addField("**")
 client.on('message', message => {
 if (tL(message.content) === 'era mia') {
 message.channel.sendEmbed(mia);
