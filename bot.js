@@ -58,6 +58,7 @@ let clan = new Discord.RichEmbed()
 + "ripmain\n"
 + "eonsapart\n"
 + "b3nnyb0i\n"
++ "szv\n"
 + "!*^")
 client.on('message', message => {
 if (tL(message.content) === 'era clan') {
