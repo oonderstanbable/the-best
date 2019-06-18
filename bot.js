@@ -50,7 +50,7 @@ Krunker.getUser('Helinho').then(data => {
 
 client.on('message', message => {
     if (tL(message.content) === 'era avatar') {
-      message.reply(message.author.avatar);
+      message.reply(message.author.avatarURL);
     }
   });
 
@@ -66,6 +66,7 @@ let embed = new Discord.RichEmbed()
 + "-era sv\n"
 + "-era mia\n"
 + "-era fra\n"
++ "-era avatar\n"
 + "-era twitter```")
 .addField("**OAuth2 Link:**", "https://discordapp.com/api/oauth2/authorize?client_id=589092675228270600&permissions=8&scope=bot")
 client.on('message', message => {
