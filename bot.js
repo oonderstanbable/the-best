@@ -50,7 +50,7 @@ Krunker.getUser('Helinho').then(data => {
 
 client.on('message', message => {
     if (tL(message.content) === 'era avatar') {
-      message.reply(message.author.avatarURL);
+      message.reply(message.author.avatar);
     }
   });
 
