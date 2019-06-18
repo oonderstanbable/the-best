@@ -77,7 +77,7 @@ message.author.sendEmbed(embed);
 
 let clan = new Discord.RichEmbed()
 .setColor(0x4286f4)
-.addField("**Clan Level**", "74")
+.addField("**Clan Level**", "76")
 .addField("**Clan Members:**", "OOOPS (leader)\n"
 + "awesompuppy\n"
 + "boB_\n"
@@ -96,7 +96,6 @@ let clan = new Discord.RichEmbed()
 + "eonsapart\n"
 + "b3nnyb0i\n"
 + "szv\n"
-+ "Paris.\n"
 + "px\n"
 + "!*^")
 client.on('message', message => {
@@ -117,7 +116,7 @@ let mia = new Discord.RichEmbed()
 .addField("**__Miami Competitive Roster #2__**","```ini\n"
 +"-NBG Rain [Leader]\n" 
 +"- !*^\n"
-+"- Paris.\n"
++"- \n"
 +"- px\n"
 +"; (sub)\n"
 +"```")
