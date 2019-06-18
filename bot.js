@@ -1,5 +1,7 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
+//const KrunkerJS = require('krunker.io');
+//const Krunker = new KrunkerJS();
 client.on('ready' , () => {
 client.user.setStatus('Online')
 // client.user.setActivity('type era help for help')
@@ -20,6 +22,37 @@ if (tL(message.content) === 'era') {
 message.channel.send('Hello, era bot is at your service.');
     }
 });
+
+client.on('message', message => {
+    if (tL(message.content) === 'era krunker ') {
+    message.channel.send('https://krunker.io/social.html?p=profile&q=');
+        }
+    });
+    
+/*// Get the stats of the user
+Krunker.getUser('Helinho').then(data => {
+    // Console log the user stats as an object
+    console.log(data);
+    // [V1.2^ Feature] Gets all stats ready as an object
+    console.log(data.simplified);
+ 
+    // Convert Player Score to Level
+    Krunker.getLevel(data);
+    // Convert Time Played
+    Krunker.getPlayTime(data);
+    // Get user KDR
+    Krunker.getKDR(data);
+    // Get W/L
+    Krunker.getWL(data);
+    // Get SPK
+    Krunker.getSPK(data);
+});*/
+
+client.on('message', message => {
+    if (tL(message.content) === 'era avatar') {
+      message.reply(message.author.avatarURL);
+    }
+  });
 
 client.on("message",a=>{mV=a.content.split(" "),mV.length>=7&&"era"==tL(a.content.slice(0,17))&&iN(mV[4])&&iO(mV[5])&&iN(mV[6])&&a.channel.send(Math.round(1e4*mC[mV[5]](parseInt(mV[4]),parseInt(mV[6])))/1e4)});
 let embed = new Discord.RichEmbed()
