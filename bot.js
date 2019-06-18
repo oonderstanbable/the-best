@@ -117,7 +117,7 @@ let mia = new Discord.RichEmbed()
 .addField("**__Miami Competitive Roster #2__**","```ini\n"
 +"-NBG Rain [Leader]\n" 
 +"- !*^\n"
-+"- \n"
++"- Paris.\n"
 +"-\n"
 +"; (sub)\n"
 +"```")
