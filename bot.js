@@ -30,6 +30,9 @@ let embed = new Discord.RichEmbed()
 + "-era ball\n"
 + "-era clan\n"
 + "-era gay\n"
++ "-era sv\n"
++ "-era mia\n"
++ "-era fra\n"
 + "-era twitter```")
 .addField("**OAuth2 Link:**", "https://discordapp.com/api/oauth2/authorize?client_id=589092675228270600&permissions=8&scope=bot")
 client.on('message', message => {
