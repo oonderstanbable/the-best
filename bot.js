@@ -26,7 +26,7 @@ message.channel.send('Hello, era bot is at your service.');
 
 client.on('message', message => {
     if (message.content === 'rip') {
-        message.channel.send({files: ["./images/rip.png"]});
+        message.channel.send({files: [".rip.png"]});
     }
 });
 
