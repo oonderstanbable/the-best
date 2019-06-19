@@ -25,13 +25,6 @@ message.channel.send('Hello, era bot is at your service.');
 });
 
 client.on('message', message => {
-    if (message.content === 'rip') {
-        message.channel.send({files: [".rip.png"]});
-    }
-});
-
-
-client.on('message', message => {
     if (tL(message.content) === 'era krunker') {
     message.channel.send('https://krunker.io/social.html?p=profile&q=');
         }
