@@ -119,8 +119,8 @@ let mia = new Discord.RichEmbed()
 +"- NBG Rain [Leader]\n" 
 +"- !*^\n"
 +"- Infeno\n"
-+"- px\n"
-+"; (sub)\n"
++"- \n"
++" px; (sub)\n"
 +"```")
 .addField("**__Miami Competitive Record__**", "```diff\n"
 + "+\n"
