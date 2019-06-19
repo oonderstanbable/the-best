@@ -1,5 +1,4 @@
 const Discord = require('discord.js');
-const { Client, Attachment } = require('discord.js');
 const client = new Discord.Client();
 //const KrunkerJS = require('krunker.io');
 //const Krunker = new KrunkerJS();
