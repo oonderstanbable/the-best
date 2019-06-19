@@ -109,9 +109,9 @@ message.channel.sendEmbed(clan);
 let mia = new Discord.RichEmbed()
 .setColor(0x4286f4)
 .addField("**__Miami Comp Team #1__**", "```ini\n"
-+"- rylentless [Leader]\n"
++"- hunnids [Leader]\n"
 +"- evbg\n"
-+"- hunnids\n"
++"- rylentless\n"
 +"- Constrained\n"
 +"; NBG Rain(sub)\n"
 +"```\n")
