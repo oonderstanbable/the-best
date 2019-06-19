@@ -25,11 +25,12 @@ message.channel.send('Hello, era bot is at your service.');
 });
 
 client.on('message', message => {
+    let args = message.content.split(' ');
     if (tL(message.content) === 'era krunker') {
-    message.channel.send('https://krunker.io/social.html?p=profile&q=');
-        }
+        if(!args[2]) return message.channel.send('Please specify a name');
+        message.channel.send('https://krunker.io/social.html?p=profile&q=' + args.slice(2).join(' ').replace(' ', '%20'));
+       }
     });
-    
 /*// Get the stats of the user
 Krunker.getUser('Helinho').then(data => {
     // Console log the user stats as an object
@@ -78,7 +79,7 @@ message.author.sendEmbed(embed);
 
 let clan = new Discord.RichEmbed()
 .setColor(0x4286f4)
-.addField("**Clan Level**", "78")
+.addField("**Clan Level**", "79")
 .addField("**Clan Members:**", "OOOPS (leader)\n"
 + "awesompuppy\n"
 + "boB_\n"
