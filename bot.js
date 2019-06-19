@@ -26,9 +26,9 @@ message.channel.send('Hello, era bot is at your service.');
 
 client.on('message', message => {
     let args = message.content.split(' ');
-    if(args[0].toLowerCase === 'era' && args[1].toLowerCase === 'krunker') {
+    if(args[0].toLowerCase() === 'era' && args[1].toLowerCase() === 'krunker') {
         if(!args[2]) return message.channel.send('Please specify a name');
-        message.channel.send('https://krunker.io/social.html?p=profile&q=' + args.slice(2).join(' ').replace(' ', '%20'));
+        message.channel.send('https://krunker.io/social.html?p=profile&q=' + args.slice(2).join('%20'));
        }
     });
 /*// Get the stats of the user
