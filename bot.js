@@ -4,7 +4,7 @@ const client = new Discord.Client();
 //const Krunker = new KrunkerJS();
 client.on('ready' , () => {
 client.user.setStatus('Online')
-// client.user.setActivity('type era help for help')
+//client.user.setActivity('type era help for help')
 });
 function coinflip() {
 return (Math.floor(Math.random() * 2) == 0) ? 'heads' : 'tails';
@@ -20,6 +20,13 @@ function tL(a){return a.toLowerCase();}
 client.on('message', message => {
 if (tL(message.content) === 'era') {
 message.channel.send('Hello, era bot is at your service.');
+    }
+});
+
+client.on('message', message => {
+    if (message.content === 'rip') {
+        const attachment = new Attachment('https://i.imgur.com/w3duR07.png');
+        message.channel.send(attachment);
     }
 });
 
