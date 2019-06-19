@@ -98,6 +98,7 @@ let clan = new Discord.RichEmbed()
 + "szv\n"
 + "Paris.\n"
 + "px\n"
++ "Infeno\n"
 + "!*^")
 client.on('message', message => {
 if (tL(message.content) === 'era clan') {
@@ -117,7 +118,7 @@ let mia = new Discord.RichEmbed()
 .addField("**__Miami Competitive Roster #2__**","```ini\n"
 +"-NBG Rain [Leader]\n" 
 +"- !*^\n"
-+"- Paris.\n"
++"- Infeno\n"
 +"- px\n"
 +"; (sub)\n"
 +"```")
