@@ -1,4 +1,5 @@
 const Discord = require('discord.js');
+const { Client, Attachment } = require('discord.js');
 const client = new Discord.Client();
 //const KrunkerJS = require('krunker.io');
 //const Krunker = new KrunkerJS();
@@ -24,8 +25,9 @@ message.channel.send('Hello, era bot is at your service.');
 });
 
 client.on('message', message => {
-    if (tL(message.content) === 'rip') {
-        message.channel.send('https://i.imgur.com/w3duR07.png');
+    if (message.content === 'rip') {
+        const attachment = new Attachment('https://i.imgur.com/w3duR07.png');
+        message.channel.send(attachment);
     }
 });
 
