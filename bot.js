@@ -24,7 +24,7 @@ message.channel.send('Hello, era bot is at your service.');
 });
 
 client.on('message', message => {
-    if (message.content === 'rip') {
+    if (tL(message.content) === 'rip') {
         const attachment = new Attachment('https://i.imgur.com/w3duR07.png');
         message.channel.send(attachment);
     }
