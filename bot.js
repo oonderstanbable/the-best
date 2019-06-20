@@ -1,7 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-//const KrunkerJS = require('krunker.io');
-//const Krunker = new KrunkerJS();
+
 client.on('ready' , () => {
 client.user.setStatus('Online')
 //client.user.setActivity('type era help for help')
@@ -30,24 +29,7 @@ let args = message.content.split(' ');
         message.channel.send('https://krunker.io/social.html?p=profile&q=' + args.slice(2).join('%20'));
     }
 });
-/*// Get the stats of the user
-Krunker.getUser('Helinho').then(data => {
-    // Console log the user stats as an object
-    console.log(data);
-    // [V1.2^ Feature] Gets all stats ready as an object
-    console.log(data.simplified);
- 
-    // Convert Player Score to Level
-    Krunker.getLevel(data);
-    // Convert Time Played
-    Krunker.getPlayTime(data);
-    // Get user KDR
-    Krunker.getKDR(data);
-    // Get W/L
-    Krunker.getWL(data);
-    // Get SPK
-    Krunker.getSPK(data);
-});*/
+
 
 client.on('message', message => {
     if (tL(message.content) === 'era avatar') {
