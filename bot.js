@@ -39,7 +39,7 @@ client.on('message', message => {
 
 client.on("message",a=>{mV=a.content.split(" "),mV.length>=7&&"era"==tL(a.content.slice(0,17))&&iN(mV[4])&&iO(mV[5])&&iN(mV[6])&&a.channel.send(Math.round(1e4*mC[mV[5]](parseInt(mV[4]),parseInt(mV[6])))/1e4)});
 let embed = new Discord.RichEmbed()
-.setColor(0x4286f4)
+.setColor(15158332)
 .addField("Hey, I'm era bot", "**Discord link:** https://discord.gg/x3d8Ajh")
 .addField("Commands Available:", "```-era\n"
 + "-era flip a coin\n"
@@ -59,7 +59,7 @@ message.channel.sendEmbed(embed);
 });
 
 let clan = new Discord.RichEmbed()
-.setColor(0x4286f4)
+.setColor(15844367)
 .addField("**Clan Level**", "81")
 .addField("**Clan Members:**", "OOOPS (leader)\n"
 + "awesompuppy\n"
@@ -89,7 +89,7 @@ message.channel.sendEmbed(clan);
 });
 
 let mia = new Discord.RichEmbed()
-.setColor(0x4286f4)
+.setColor(1752220)
 .addField("**__Miami Comp Team #1__**", "```ini\n"
 +"- hunnids [Leader]\n"
 +"- evbg\n"
@@ -140,7 +140,7 @@ message.channel.sendEmbed(sv);
 });
 
 let fra = new Discord.RichEmbed()
-.setColor(0x4286f4)
+.setColor(1752220)
 .addField("**__Frankfurt Comp Team__**", "```ini\n"
 +"-  [Leader]\n"
 +"- \n"
