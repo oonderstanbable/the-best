@@ -3,7 +3,6 @@ const client = new Discord.Client();
 
 client.on('ready' , () => {
 client.user.setStatus('Online')
-//client.user.setActivity('type era help for help')
 });
 function coinflip() {
 return (Math.floor(Math.random() * 2) == 0) ? 'heads' : 'tails';
@@ -21,14 +20,15 @@ if (tL(message.content) === 'era') {
 message.channel.send('Hello, era bot is at your service.');
     }
 });
-client.on('message', message => {
+
+/*client.on('message', message => {
 let args = message.content.split(' ');
 
     if(args[0].toLowerCase() === 'era' && args[1].toLowerCase() === 'krunker') {
         if(!args[2]) return message.channel.send('Specify a player retard');
         message.channel.send('https://krunker.io/social.html?p=profile&q=' + args.slice(2).join('%20'));
     }
-});
+});*/
 
 
 client.on('message', message => {
