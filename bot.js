@@ -115,7 +115,7 @@ message.channel.sendEmbed(mia);
 });
 
 let sv = new Discord.RichEmbed()
-.setColor(E040FB)
+.setColor(1752220)
 .addField("**__Silicon Valley Comp Team__**", "```ini\n"
 +"- Sonder [Leader]\n"
 +"- boB_\n"
