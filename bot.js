@@ -54,7 +54,7 @@ let embed = new Discord.RichEmbed()
 .addField("**OAuth2 Link:**", "https://discordapp.com/api/oauth2/authorize?client_id=589092675228270600&permissions=8&scope=bot")
 client.on('message', message => {
 if (tL(message.content) === 'era help') {
-message.author.sendEmbed(embed);
+message.channel.sendEmbed(embed);
     }
 });
 
@@ -115,7 +115,7 @@ message.channel.sendEmbed(mia);
 });
 
 let sv = new Discord.RichEmbed()
-.setColor(0x4286f4)
+.setColor(E040FB)
 .addField("**__Silicon Valley Comp Team__**", "```ini\n"
 +"- Sonder [Leader]\n"
 +"- boB_\n"
