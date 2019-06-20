@@ -107,11 +107,11 @@ let mia = new Discord.RichEmbed()
 +"; NBG Rain(sub)\n"
 +"```\n")
 .addField("**__Miami Competitive Roster #2__**","```ini\n"
-+"- NBG Rain [Leader]\n" 
++"- Remmii [Leader]\n" 
 +"- !*^\n"
 +"- Infeno\n"
-+"- \n"
-+" px; (sub)\n"
++"- NBG Rain\n"
++"; px; (sub)\n"
 +"```")
 .addField("**__Miami Competitive Record__**", "```diff\n"
 + "+\n"
