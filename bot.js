@@ -38,9 +38,18 @@ client.on('message', message => {
   });
 
 client.on("message",a=>{mV=a.content.split(" "),mV.length>=7&&"era"==tL(a.content.slice(0,17))&&iN(mV[4])&&iO(mV[5])&&iN(mV[6])&&a.channel.send(Math.round(1e4*mC[mV[5]](parseInt(mV[4]),parseInt(mV[6])))/1e4)});
-let embed = new Discord.RichEmbed()
+
+let invite = new Discord.RichEmbed()
 .setColor(15158332)
 .addField("Hey, I'm era bot", "**Discord link:** https://discord.gg/x3d8Ajh")
+.addField("**OAuth2 Link:**", "https://discordapp.com/api/oauth2/authorize?client_id=589092675228270600&permissions=8&scope=bot")
+client.on('message', message => {
+if (tL(message.content) === 'era invite') {
+message.channel.sendEmbed(invite);
+    }
+});
+let commands = new Discord.RichEmbed()
+.setColor(15844367)
 .addField("Commands Available:", "```-era\n"
 + "-era flip a coin\n"
 + "-era ball\n"
@@ -50,14 +59,13 @@ let embed = new Discord.RichEmbed()
 + "-era mia\n"
 + "-era fra\n"
 + "-era avatar\n"
++ "-era commands\n"
 + "-era twitter```")
-.addField("**OAuth2 Link:**", "https://discordapp.com/api/oauth2/authorize?client_id=589092675228270600&permissions=8&scope=bot")
 client.on('message', message => {
-if (tL(message.content) === 'era help') {
-message.channel.sendEmbed(embed);
+if (tL(message.content) === 'era commands') {
+message.channel.sendEmbed(commands);
     }
 });
-
 let clan = new Discord.RichEmbed()
 .setColor(15844367)
 .addField("**Clan Level**", "81")
