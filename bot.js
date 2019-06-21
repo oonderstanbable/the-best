@@ -41,7 +41,9 @@ client.on("message",a=>{mV=a.content.split(" "),mV.length>=7&&"era"==tL(a.conten
 
 let invite = new Discord.RichEmbed()
 .setColor(15158332)
-.addField("Hey, I'm era bot", "**Discord link:** https://discord.gg/x3d8Ajh")
+.addField("Hey, I'm era bot") 
+.addField("**Creator:**", "**OOOPS#9915**")  
+.addField("**Clan Discord link:**", "https://discord.gg/x3d8Ajh")
 .addField("**OAuth2 Link:**", "https://discordapp.com/api/oauth2/authorize?client_id=589092675228270600&permissions=8&scope=bot")
 client.on('message', message => {
 if (tL(message.content) === 'era invite') {
@@ -51,7 +53,7 @@ message.channel.sendEmbed(invite);
 let commands = new Discord.RichEmbed()
 .setColor(15844367)
 .addField("Commands Available:", "```-era\n"
-+ "-era flip a coin\n"
++ "-era coin flip\n"
 + "-era ball\n"
 + "-era clan\n"
 + "-era gay\n"
@@ -59,10 +61,10 @@ let commands = new Discord.RichEmbed()
 + "-era mia\n"
 + "-era fra\n"
 + "-era avatar\n"
-+ "-era commands\n"
++ "-era cmds\n"
 + "-era twitter```")
 client.on('message', message => {
-if (tL(message.content) === 'era commands') {
+if (tL(message.content) === 'era cmds') {
 message.channel.sendEmbed(commands);
     }
 });
@@ -171,7 +173,7 @@ message.channel.sendEmbed(fra);
 });
 
 client.on('message', message => {
-if (tL(message.content) === 'era flip a coin') {
+if (tL(message.content) === 'era coin flip') {
 message.reply(coinflip());
     }
 });
