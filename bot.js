@@ -100,10 +100,10 @@ message.channel.sendEmbed(clan);
 let mia = new Discord.RichEmbed()
 .setColor(1752220)
 .addField("**__Miami Comp Team #1__**", "```ini\n"
-+"- !*^ [Leader]\n"
-+"- Infeno\n"
-+"- rylentless\n"
++"- Infeno [Leader]\n"
 +"- Remmii\n"
++"- rylentless\n"
++"- !*^\n"
 +"; Hunnids(sub)\n"
 +"```\n")
 .addField("**__Miami Competitive Roster #2__**","```ini\n"
