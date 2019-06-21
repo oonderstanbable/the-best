@@ -59,6 +59,7 @@ let commands = new Discord.RichEmbed()
 + "-era sv\n"
 + "-era mia\n"
 + "-era fra\n"
++ "-era invite\n"
 + "-era avatar\n"
 + "-era cmds\n"
 + "-era twitter```")
