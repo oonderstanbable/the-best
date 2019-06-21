@@ -41,7 +41,7 @@ client.on("message",a=>{mV=a.content.split(" "),mV.length>=7&&"era"==tL(a.conten
 
 let invite = new Discord.RichEmbed()
 .setColor(15158332)
-.addField(,"Created by **OOOPS#9915**")  
+.addField("Created by **OOOPS#9915**", "era Bot is a bot that is made for the era Krunker Clan)  
 .addField("**Clan Discord link:**", "https://discord.gg/x3d8Ajh")
 .addField("**OAuth2 Link:**", "https://discordapp.com/api/oauth2/authorize?client_id=589092675228270600&permissions=8&scope=bot")
 client.on('message', message => {
