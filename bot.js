@@ -90,6 +90,7 @@ let clan = new Discord.RichEmbed()
 + "px\n"
 + "Infeno\n"
 + "Remmii\n"
++ "Reflex!!\n"
 + "MadaMada\n"
 + "!*^")
 client.on('message', message => {
@@ -154,7 +155,7 @@ let fra = new Discord.RichEmbed()
 .setColor(1752220)
 .addField("**__Frankfurt Comp Team__**", "```ini\n"
 +"- MadaMada[Leader]\n"
-+"- \n"
++"- Reflex!!\n"
 +"- \n"
 +"- \n"
 +"; (sub)\n"
