@@ -140,7 +140,7 @@ let sv = new Discord.RichEmbed()
 + "+ era-15,000 / 悪魔-10,665\n"
 + "+ era-20,000 / Dyna-8,600\n"
 + "+ era-42,375  / verb-27,715\n"
-+ "era-19,580 / Dyna-16305\n"
++ "+ era-19,580 / Dyna-16305\n"
 + "```\n")
 client.on('message', message => {
 if (tL(message.content) === 'era sv') {
