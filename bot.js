@@ -68,7 +68,7 @@ message.channel.sendEmbed(commands);
 });
 let clan = new Discord.RichEmbed()
 .setColor(15844367)
-.addField("**Clan Level**", "81")
+.addField("**Clan Level**", "85")
 .addField("**Clan Members:**", "OOOPS (leader)\n"
 + "awesompuppy\n"
 + "boB_\n"
@@ -100,18 +100,18 @@ message.channel.sendEmbed(clan);
 let mia = new Discord.RichEmbed()
 .setColor(1752220)
 .addField("**__Miami Comp Team #1__**", "```ini\n"
-+"- hunnids [Leader]\n"
-+"- evbg\n"
++"- !*^ [Leader]\n"
++"- Infeno\n"
 +"- rylentless\n"
-+"- Constrained\n"
-+"; NBG Rain(sub)\n"
++"- Remmii\n"
++"; Hunnids(sub)\n"
 +"```\n")
 .addField("**__Miami Competitive Roster #2__**","```ini\n"
-+"- Remmii [Leader]\n" 
-+"- !*^\n"
-+"- Infeno\n"
-+"- NBG Rain\n"
-+"; px; (sub)\n"
++"- evbg [Leader]\n" 
++"- Hunnids\n"
++"- Constrained\n"
++"- Awesompuppy\n"
++";  (sub)\n"
 +"```")
 .addField("**__Miami Competitive Record__**", "```diff\n"
 + "+\n"
@@ -140,7 +140,6 @@ let sv = new Discord.RichEmbed()
 + "+ era-15,000 / 悪魔-10,665\n"
 + "+ era-20,000 / Dyna-8,600\n"
 + "+ era-42,375  / verb-27,715\n"
-+ "+ era-10,000 / FRCE - 9360\n"
 + "```\n")
 client.on('message', message => {
 if (tL(message.content) === 'era sv') {
