@@ -114,6 +114,7 @@ let mia = new Discord.RichEmbed()
 +";  (sub)\n"
 +"```")
 .addField("**__Miami Competitive Record__**", "```diff\n"
++ "+ era-25,000 / dyna-24,115\n"
 + "+\n"
 + "-\n"
 + "```\n")
