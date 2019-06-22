@@ -105,10 +105,10 @@ let mia = new Discord.RichEmbed()
 +"```\n")
 .addField("**__Miami Competitive Roster #2__**","```ini\n"
 +"- evbg [Leader]\n" 
-+"- Hunnids\n"
++"- px\n"
 +"- Constrained\n"
 +"- Awesompuppy\n"
-+";  (sub)\n"
++"; (sub)\n"
 +"```")
 .addField("**__Miami Competitive Record__**", "```diff\n"
 + "+ era-25,000 / dyna-24,115\n"
