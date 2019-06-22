@@ -45,7 +45,8 @@ message.channel.sendEmbed(invite);
 });
 let commands = new Discord.RichEmbed()
 .setColor(15844367)
-.addField("Commands Available:", "```-era cmds\n"
+.addField("Commands Available:", "```\n"
++ "-era cmds\n"
 + "-era coin flip\n"
 + "-era ball\n"
 + "-era clan\n"
