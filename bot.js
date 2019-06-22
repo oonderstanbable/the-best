@@ -15,12 +15,6 @@ function iN(a){return/^\d+$/.test(a);}function iO(a){return a.match('^[/*+-]{1}$
 function cL(a){return a.replace(/[\[\]]/g, "");}
 function tL(a){return a.toLowerCase();}
 
-client.on('message', message => {
-if (tL(message.content) === 'era') {
-message.channel.send('Hello, era bot is at your service.');
-    }
-});
-
 /*client.on('message', message => {
 let args = message.content.split(' ');
 
@@ -51,7 +45,7 @@ message.channel.sendEmbed(invite);
 });
 let commands = new Discord.RichEmbed()
 .setColor(15844367)
-.addField("Commands Available:", "```-era\n"
+.addField("Commands Available:", "```-era cmds\n"
 + "-era coin flip\n"
 + "-era ball\n"
 + "-era clan\n"
@@ -61,7 +55,6 @@ let commands = new Discord.RichEmbed()
 + "-era fra\n"
 + "-era invite\n"
 + "-era avatar\n"
-+ "-era cmds\n"
 + "-era twitter```")
 client.on('message', message => {
 if (tL(message.content) === 'era cmds') {
