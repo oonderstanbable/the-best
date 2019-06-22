@@ -45,7 +45,7 @@ message.channel.sendEmbed(invite);
 });
 let commands = new Discord.RichEmbed()
 .setColor(15844367)
-.addField("Commands Available:", "**Command list:**\n"
+.addField("Commands Available:", "-era avatar\n"
 + "-era cmds\n"
 + "-era coin flip\n"
 + "-era ball\n"
@@ -55,7 +55,6 @@ let commands = new Discord.RichEmbed()
 + "-era mia\n"
 + "-era fra\n"
 + "-era invite\n"
-+ "-era avatar\n"
 + "-era twitter")
 client.on('message', message => {
 if (tL(message.content) === 'era cmds') {
