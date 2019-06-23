@@ -85,7 +85,7 @@ let clan = new Discord.RichEmbed()
 + "px\n"
 + "Infeno\n"
 + "Remmii\n"
-+ "Vortex gfxn"
++ "Vortex gfx\n"
 + "MadaMada\n"
 + "!*^")
 client.on('message', message => {
