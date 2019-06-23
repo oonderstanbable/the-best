@@ -63,7 +63,7 @@ message.channel.sendEmbed(commands);
 });
 let clan = new Discord.RichEmbed()
 .setColor(15844367)
-.addField("**Clan Level**", "90")
+.addField("**Clan Level**", "91")
 .addField("**Clan Members:**", "OOOPS (leader)\n"
 + "awesompuppy\n"
 + "boB_\n"
