@@ -15,7 +15,7 @@ function iN(a){return/^\d+$/.test(a);}function iO(a){return a.match('^[/*+-]{1}$
 function cL(a){return a.replace(/[\[\]]/g, "");}
 function tL(a){return a.toLowerCase();}
 
-bot.on('guildMemberAdd', member => {
+client.on('guildMemberAdd', member => {
 
     console.log('User' + member.user.username + 'Has joined the server!')
     console.log(member)
