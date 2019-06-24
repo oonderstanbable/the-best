@@ -23,10 +23,9 @@ Client.on("guildMemberadd", function(message) {
     
     const embed = new Discord.Richembed()
     .setColor(0xffffff)
-    .setTitle('era Bot - Welcome')
-    .setDescription('YOOO ${member.user}, Welcome to era Krunker clan disocrd sevrver.')
+    .addField('era Bot - Welcome')
+    .addField('YOOO ${member.user}, Welcome to era Krunker clan disocrd sevrver.')
     .setThumbnail(member.user.avatarURL)
-    .setFooter(footer)
              
   member.guild.channels.find('name', 'welcome').send({ embed: embed});
 });
