@@ -26,7 +26,7 @@ bot.on('guildMemberAdd', member => {
     member.addRole(role)
 
     member.guild.channels.get('586309740217237525').send('**' + member.user.username + '**, has joined era Clan discord');
-})
+});
 /*client.on('message', message => {
 let args = message.content.split(' ');
 
