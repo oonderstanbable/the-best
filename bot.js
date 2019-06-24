@@ -15,20 +15,18 @@ function iN(a){return/^\d+$/.test(a);}function iO(a){return a.match('^[/*+-]{1}$
 function cL(a){return a.replace(/[\[\]]/g, "");}
 function tL(a){return a.toLowerCase();}
 
-Client.on("guildMemberadd", function(message) {
-    
-    let guild = message.guild;
-    let member = message;
-    let membercount = client.users.size;
-    
-    const embed = new Discord.Richembed()
-    .setColor(0xffffff)
-    .addField('era Bot - Welcome')
-    .addField('YOOO ${member.user}, Welcome to era Krunker clan disocrd sevrver.')
-    .setThumbnail(member.user.avatarURL)
-             
-  member.guild.channels.find('name', 'welcome').send({ embed: embed});
-});
+bot.on('guildMemberAdd', member => {
+
+    console.log('User' + member.user.username + 'Has joined the server!')
+    console.log(member)
+
+    var role = member.guild.role.find('name', 'User');
+
+
+    member.addRole(role)
+
+    member.guild.channels.get('586309740217237525').send('**' + member.user.username + '**, has joined era Clan discord');
+})
 /*client.on('message', message => {
 let args = message.content.split(' ');
 
