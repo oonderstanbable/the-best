@@ -15,6 +15,21 @@ function iN(a){return/^\d+$/.test(a);}function iO(a){return a.match('^[/*+-]{1}$
 function cL(a){return a.replace(/[\[\]]/g, "");}
 function tL(a){return a.toLowerCase();}
 
+Client.on("guildMemberadd", function(message) {
+    
+    let guild = message.guild;
+    let member = message;
+    let membercount = client.users.size;
+    
+    const embed = new Discord.Richembed()
+    .setColor(0xffffff)
+    .setTitle('era Bot - Welcome')
+    .setDescription('YOOO ${member.user}, Welcome to era Krunker clan disocrd sevrver.')
+    .setThumbnail(member.user.avatarURL)
+    .setFooter(footer)
+             
+  member.guild.channels.find('name', 'welcome').send({ embed: embed});
+});
 /*client.on('message', message => {
 let args = message.content.split(' ');
 
