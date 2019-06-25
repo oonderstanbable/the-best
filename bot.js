@@ -89,9 +89,10 @@ let clan = new Discord.RichEmbed()
 + "szv\n"
 + "px\n"
 + "Infeno\n"
-+ "Remmii\n"
 + "Vortex gfx\n"
 + "MadaMada\n"
++ "Iaw\n"
++ "kyroF\n"
 + "!*^")
 client.on('message', message => {
 if (tL(message.content) === 'era clan') {
@@ -156,7 +157,7 @@ let fra = new Discord.RichEmbed()
 .setColor(1752220)
 .addField("**__Frankfurt Comp Team__**", "```ini\n"
 +"- MadaMada[Leader]\n"
-+"- \n"
++"- kyroF\n"
 +"- \n"
 +"- \n"
 +"; (sub)\n"
