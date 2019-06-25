@@ -19,8 +19,9 @@ function tL(a){return a.toLowerCase();}
 client.on('guildMemberAdd', member => {
 let join = new Discord.RichEmbed()
 .setColor(15158332)
-.addField('**' + member.user.username + '**, has joined era Clan discord')  
-.addField("use **era help* to see era Bot commands", "If you want to apply you can go to #【📋】how-to-apply to learn join")
+.addThumbnail(member.AvatarURL)
+.addField('**' + member.user.username + '**, has joined era Clan discord') 
+.addField("use **era help** to see era Bot commands", "If you want to apply you can go to #【📋】how-to-apply to learn join")
     console.log('User' + member.user.username + 'Has joined the server!')
     console.log(member)
 
