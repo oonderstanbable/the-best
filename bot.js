@@ -64,7 +64,7 @@ let commands = new Discord.RichEmbed()
 + "-era invite\n"
 + "-era twitter")
 client.on('message', message => {
-if (tL(message.content) === 'era cmds') {
+if (tL(message.content) === 'era help') {
 message.channel.sendEmbed(commands);
     }
 });
