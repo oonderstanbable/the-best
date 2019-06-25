@@ -20,11 +20,6 @@ client.on('guildMemberAdd', member => {
     console.log('User' + member.user.username + 'Has joined the server!')
     console.log(member)
 
-    var role = member.guild.role.find('name', 'User');
-
-
-    member.addRole(role)
-
     member.guild.channels.get('586309740217237525').send('**' + member.user.username + '**, has joined era Clan discord');
 });
 /*client.on('message', message => {
