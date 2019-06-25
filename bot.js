@@ -24,7 +24,7 @@ client.on('guildMemberAdd', member => {
     console.log('User' + member.user.username + 'Has joined the server!')
     console.log(member)
 
-    member.guild.channels.get('586309740217237525').send();
+    member.guild.channels.get('586309740217237525').send(join);
 });
 /*client.on('message', message => {
 let args = message.content.split(' ');
@@ -57,7 +57,7 @@ message.channel.sendEmbed(invite);
 let commands = new Discord.RichEmbed()
 .setColor(15844367)
 .addField("Commands Available:", "-era avatar\n"
-+ "-era cmds\n"
++ "-era help\n"
 + "-era coin flip\n"
 + "-era ball\n"
 + "-era clan\n"
@@ -96,6 +96,7 @@ let clan = new Discord.RichEmbed()
 + "Vortex gfx\n"
 + "MadaMada\n"
 + "Iaw\n"
++ "Remmii\n"
 + "kyroF\n"
 + "!*^")
 client.on('message', message => {
