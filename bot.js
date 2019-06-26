@@ -74,7 +74,7 @@ message.channel.sendEmbed(commands);
 });
 let clan = new Discord.RichEmbed()
 .setColor(15844367)
-.addField("**Clan Level**", "94")
+.addField("**Clan Level**", "96")
 .addField("**Clan Members:**", "OOOPS (leader)\n"
 + "awesompuppy\n"
 + "boB_\n"
@@ -119,8 +119,8 @@ let mia = new Discord.RichEmbed()
 +"- evbg [Leader]\n" 
 +"- Remmii\n"
 +"- Rylentless\n"
-+"- Awesompuppy\n"
-+"; px(sub)\n"
++"- px\n"
++"; (sub)\n"
 +"```")
 .addField("**__Miami Competitive Record__**", "```diff\n"
 + "+ era-25,000 / dyna-24,115\n"
