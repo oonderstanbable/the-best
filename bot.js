@@ -94,6 +94,7 @@ let clan = new Discord.RichEmbed()
 + "px\n"
 + "Infeno\n"
 + "Vortex gfx\n"
++ "iguessmysmurf\n"
 + "MadaMada\n"
 + "Iaw\n"
 + "Remmii\n"
@@ -163,7 +164,7 @@ let fra = new Discord.RichEmbed()
 .addField("**__Frankfurt Comp Team__**", "```ini\n"
 +"- MadaMada[Leader]\n"
 +"- kyroF\n"
-+"- \n"
++"- iguessmysmurf\n"
 +"- \n"
 +"; (sub)\n"
 +"```\n")
