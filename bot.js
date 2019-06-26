@@ -91,6 +91,7 @@ let clan = new Discord.RichEmbed()
 + "ripmain\n"
 + "eonsapart\n"
 + "szv\n"
++ "jumpshawt\n"
 + "px\n"
 + "Infeno\n"
 + "Vortex gfx\n"
