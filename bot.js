@@ -182,7 +182,7 @@ let sv = new Discord.RichEmbed()
 +"- boB_\n"
 +"- spyrosh\n"
 +"- Malihboo\n"
-+"; (sub)\n"
++"; awesompuppy(sub)\n"
 +"; (sub)\n"
 +"```\n")
 .addField("**__Silicon Valley Competitive Record__**", "```diff\n"
