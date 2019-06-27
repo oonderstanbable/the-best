@@ -29,7 +29,7 @@ let join = new Discord.RichEmbed()
     console.log('User' + member.user.username + 'Has joined the server!')
     console.log(member)
 
-    let rules = new Discord.RichEmbed()
+   /* let rules = new Discord.RichEmbed()
     .setcolor(15158332)
     .addField("```ini"
        +"Welcome to Era clan discord\n"
@@ -62,7 +62,7 @@ let join = new Discord.RichEmbed()
        + " ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n"
        + " **OFFICIAL INVITE LINK:** https://discord.gg/x3d8Ajh\n"
        +"```\n");
-    message.guildMember.sendEmbed(rules);
+    message.guildMember.sendEmbed(rules);*/
     member.guild.channels.get('586309740217237525').sendEmbed(join);
 });
 /*client.on('message', message => {
