@@ -30,6 +30,7 @@ let join = new Discord.RichEmbed()
     console.log(member)
 
     let rules = new Discord.RichEmbed()
+    .setcolor(15158332)
     .addField("```ini"
        +"Welcome to Era clan discord\n"
        +"▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n"
