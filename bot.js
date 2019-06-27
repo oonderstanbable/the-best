@@ -70,6 +70,7 @@ let commands = new Discord.RichEmbed()
 + "-era mia\n"
 + "-era fra\n"
 + "-era invite\n"
++ "-era scope\n"
 + "-era twitter")
 client.on('message', message => {
 if (tL(message.content) === 'era help') {
@@ -195,6 +196,11 @@ message.reply(ball());
     }
 });
 
+client.on('message', message => {
+if (tL(message.content) === 'era scope') {
+message.reply(scope());
+    }
+});
 client.on('message', message => {
 if (tL(message.content) === 'era gay') {
 message.reply('Sonder is the gayest person in the world');
