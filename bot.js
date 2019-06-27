@@ -11,6 +11,10 @@ function ball() {
 choices = ["||penis||","era is the best clan","#era gang","get out of my face","you are beautiful just the way you are","you are loved by OOOPS","you will be banned from this server one day","you are gay"];
 return choices[Math.floor(Math.random() * 8)];
 }
+function scope() {
+choices = ["https://media.discordapp.net/attachments/582082294655746059/592353080943575054/krunker-crosshair.png?width=474&height=474","https://media.discordapp.net/attachments/592029007172599810/592981394154586133/clean_gradient_scope.png?width=474&height=474","https://media.discordapp.net/attachments/560218391105896457/565223755232837632/cato.png?width=487&height=487","https://images-ext-2.discordapp.net/external/XPTrPiO8R2ziHwP_voLtu7HEg7KRb83ZgeYR6VAvqw0/https/cdn.discordapp.com/attachments/586270578894438413/586271135033983006/yel.png?width=270&height=270","https://cdn.discordapp.com/attachments/583767339649204225/587317148171370506/recticle.png","https://cdn.discordapp.com/attachments/575245800633008128/575280480610418698/Crosshair_test.png","https://cdn.discordapp.com/attachments/452898636205129730/585662907929329674/dotbluesniper1.png","https://media.discordapp.net/attachments/582082294655746059/582084765272899648/quackscope2.png?width=474&height=474","https://media.discordapp.net/attachments/582082294655746059/582084758306029588/quackscope6.png?width=474&height=474","https://media.discordapp.net/attachments/582082294655746059/582084764601942016/image0.png?width=474&height=474","https://media.discordapp.net/attachments/582082294655746059/586748014631059456/scope.png?width=474&height=474","https://media.discordapp.net/attachments/582082294655746059/582204698568818723/scope-hd-png-download-1080.png?width=474&height=474","https://media.discordapp.net/attachments/582082294655746059/582084764601942016/image0.png?width=474&height=474","https://cdn.discordapp.com/attachments/573231059274170421/573233011676414033/Untitled-1.png","https://cdn.discordapp.com/attachments/582667537989238815/593770376597602304/scope_PNG13037.png","https://cdn.discordapp.com/attachments/582667537989238815/593770478380908557/61f6x303xGL.png","https://cdn.discordapp.com/attachments/582667537989238815/593770731754487818/9hpat5kb1ox21.png","https://cdn.discordapp.com/attachments/582667537989238815/593771034587693066/krunker_custom_scope_v2_by_theanimeflamettv_dd8lwwq-pre.png","https://cdn.discordapp.com/attachments/582667537989238815/593771477543944202/aiming-reticle-png-simple-crosshairs-transparent-background-6.png","https://cdn.discordapp.com/attachments/494607285079900171/577247727453208596/simbolos-egipcios-Ouroboros-600x600.png","https://cdn.discordapp.com/attachments/555896665232637964/565245220795449374/dribble.gif","https://cdn.discordapp.com/attachments/578013147018035202/578013339528200212/purplei_crosshaire.png","https://media.discordapp.net/attachments/572591986016649246/576204975030534199/quix_copy.png?width=517&height=517","https://cdn.discordapp.com/attachments/564095254320513060/581692480102203393/unknown.png Infeno made that scope"];
+return choices[Math.floor(Math.random() * 24)];
+}
 function iN(a){return/^\d+$/.test(a);}function iO(a){return a.match('^[/*+-]{1}$')==null?!1:!0;}mC={'/':function(a,b){return a/b;},'*':function(a,b){return a*b;},'-':function(a,b){return a-b;},'+':function(a,b){return a+b;}};
 function cL(a){return a.replace(/[\[\]]/g, "");}
 function tL(a){return a.toLowerCase();}
@@ -74,7 +78,7 @@ message.channel.sendEmbed(commands);
 });
 let clan = new Discord.RichEmbed()
 .setColor(15844367)
-.addField("**Clan Level**", "96")
+.addField("**Clan Level**", "97")
 .addField("**Clan Members:**", "OOOPS (leader)\n"
 + "awesompuppy\n"
 + "boB_\n"
