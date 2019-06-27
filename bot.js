@@ -198,7 +198,7 @@ message.reply(ball());
 
 client.on('message', message => {
 if (tL(message.content) === 'era scope') {
-message.reply(scope());
+message.channel.send(scope());
     }
 });
 client.on('message', message => {
