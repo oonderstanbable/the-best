@@ -62,7 +62,7 @@ let join = new Discord.RichEmbed()
        + " ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n"
        + " **OFFICIAL INVITE LINK:** https://discord.gg/x3d8Ajh\n"
        +"```\n");
-    message(guildMember).sendEmbed(rules);
+    message.guildMember.sendEmbed(rules);
     member.guild.channels.get('586309740217237525').sendEmbed(join);
 });
 /*client.on('message', message => {
