@@ -116,29 +116,29 @@ let clan = new Discord.RichEmbed()
 .setColor(15844367)
 .addField("**Clan Level**", "98")
 .addField("**Clan Members:**", "OOOPS (leader)\n"
-+ "awesompuppy\n"
++ "Vortex Gfx\n"
 + "boB_\n"
++ "awesompuppy\n"
 + "rylentless\n"
-+ "Spyrosh\n"
++ "MadaMada\n"
++ "jumpshawt\n"
 + "NBG Rain\n"
++ "px\n"
 + "Constrained\n"
++ "iguessmysmurf\n"
++ "Infeno\n"
 + "ItsCostco\n"
 + "Dalzik\n"
++ "Remmii\n"
 + "evbg\n"
++ "szv\n"
 + "Hunnids\n"
 + "Wheet\n"
 + "KenjiFTW\n"
-+ "eonsapart\n"
-+ "szv\n"
-+ "jumpshawt\n"
-+ "px\n"
-+ "Infeno\n"
-+ "Vortex gfx\n"
-+ "iguessmysmurf\n"
-+ "MadaMada\n"
 + "Iaw\n"
-+ "Remmii\n"
-+ "kyroF\n")
++ "Kyrof\n"
++ "eonsapart\n"
++ "VoidWave\n")
 client.on('message', message => {
 if (tL(message.content) === 'era clan') {
 message.channel.sendEmbed(clan);
