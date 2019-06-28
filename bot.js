@@ -114,7 +114,7 @@ message.channel.sendEmbed(commands);
 });
 let clan = new Discord.RichEmbed()
 .setColor(15844367)
-.addField("**Clan Level**", "97")
+.addField("**Clan Level**", "98")
 .addField("**Clan Members:**", "OOOPS (leader)\n"
 + "awesompuppy\n"
 + "boB_\n"
@@ -128,7 +128,6 @@ let clan = new Discord.RichEmbed()
 + "Hunnids\n"
 + "Wheet\n"
 + "KenjiFTW\n"
-+ "ripmain\n"
 + "eonsapart\n"
 + "szv\n"
 + "jumpshawt\n"
@@ -139,8 +138,7 @@ let clan = new Discord.RichEmbed()
 + "MadaMada\n"
 + "Iaw\n"
 + "Remmii\n"
-+ "kyroF\n"
-+ "!*^")
++ "kyroF\n")
 client.on('message', message => {
 if (tL(message.content) === 'era clan') {
 message.channel.sendEmbed(clan);
@@ -153,15 +151,14 @@ let mia = new Discord.RichEmbed()
 +"- Constrained [Leader]\n"
 +"- Hunnids\n"
 +"- Infeno\n"
-+"- !*^\n"
-+"; evbg(sub)\n"
++"- \n"
 +"; Remmii(sub)\n"
 +"```\n")
 .addField("**__Miami Competitive Roster #2__**","```ini\n"
-+"- evbg [Leader]\n" 
++"- px [Leader]\n" 
 +"- Remmii\n"
 +"- Rylentless\n"
-+"- px\n"
++"- evbg\n"
 +"; (sub)\n"
 +"```")
 .addField("**__Miami Competitive Record__**", "```diff\n"
@@ -178,11 +175,10 @@ message.channel.sendEmbed(mia);
 let sv = new Discord.RichEmbed()
 .setColor(1752220)
 .addField("**__Silicon Valley Comp Team__**", "```ini\n"
-+"- Sonder [Leader]\n"
-+"- boB_\n"
++"- boB_ [Leader]\n"
++"- awesompuppy\n"
 +"- spyrosh\n"
-+"- Malihboo\n"
-+"; awesompuppy(sub)\n"
++"- jumpshawt\n"
 +"; (sub)\n"
 +"```\n")
 .addField("**__Silicon Valley Competitive Record__**", "```diff\n"
@@ -206,7 +202,7 @@ let fra = new Discord.RichEmbed()
 +"- MadaMada[Leader]\n"
 +"- kyroF\n"
 +"- iguessmysmurf\n"
-+"- \n"
++"- Halloluke0201\n"
 +"; (sub)\n"
 +"```\n")
 .addField("**__Frankfurt Competitive Record__**", "```diff\n"
