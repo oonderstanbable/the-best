@@ -158,7 +158,6 @@ let mia = new Discord.RichEmbed()
 +"- Remmii\n"
 +"; Rylentless(sub)\n"
 +"; evbg(sub)\n"
-+"; Rylentless(sub)\n"
 +"; px(sub)\n"
 +"```\n")
 .addField("**__Miami Competitive Record__**", "```diff\n"
