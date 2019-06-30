@@ -67,7 +67,6 @@ let join = new Discord.RichEmbed()
 });
 /*client.on('message', message => {
 let args = message.content.split(' ');
-
     if(args[0].toLowerCase() === 'era' && args[1].toLowerCase() === 'krunker') {
         if(!args[2]) return message.channel.send('Specify a player retard');
         message.channel.send('https://krunker.io/social.html?p=profile&q=' + args.slice(2).join('%20'));
@@ -114,7 +113,7 @@ message.channel.sendEmbed(commands);
 });
 let clan = new Discord.RichEmbed()
 .setColor(15844367)
-.addField("**Clan Level**", "102)
+.addField("**Clan Level**", "101")
 .addField("**Clan Members:**", "OOOPS (leader)\n"
 + "Vortex Gfx\n"
 + "boB_\n"
@@ -151,14 +150,14 @@ message.channel.sendEmbed(clan);
 
 let mia = new Discord.RichEmbed()
 .setColor(1752220)
-.addField("**__Miami Comp Team__**", "```ini\n"
+.addField("**__Miami Comp Team #1__**", "```ini\n"
 +"- Constrained [Leader]\n"
 +"- Hunnids\n"
 +"- Infeno\n"
 +"- Remmii\n"
-+"; Rylentless(sub)\n"
-+"; evbg(sub)\n"
 +"; px(sub)\n"
++"; rylentless(sub)\n"
++"; evbg(sub)\n"
 +"```\n")
 .addField("**__Miami Competitive Record__**", "```diff\n"
 + "+ era-25,000 / dyna-24,115\n"
