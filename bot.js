@@ -151,20 +151,16 @@ message.channel.sendEmbed(clan);
 
 let mia = new Discord.RichEmbed()
 .setColor(1752220)
-.addField("**__Miami Comp Team #1__**", "```ini\n"
+.addField("**__Miami Comp Team__**", "```ini\n"
 +"- Constrained [Leader]\n"
 +"- Hunnids\n"
 +"- Infeno\n"
 +"- Remmii\n"
-+"; (sub)\n"
++"; Rylentless(sub)\n"
++"; evbg(sub)\n"
++"; Rylentless(sub)\n"
++"; px(sub)\n"
 +"```\n")
-.addField("**__Miami Competitive Roster #2__**","```ini\n"
-+"- px [Leader]\n" 
-+"- NBG Rain\n"
-+"- Rylentless\n"
-+"- evbg\n"
-+"; (sub)\n"
-+"```")
 .addField("**__Miami Competitive Record__**", "```diff\n"
 + "+ era-25,000 / dyna-24,115\n"
 + "+\n"
