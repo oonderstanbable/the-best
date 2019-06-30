@@ -114,7 +114,7 @@ message.channel.sendEmbed(commands);
 });
 let clan = new Discord.RichEmbed()
 .setColor(15844367)
-.addField("**Clan Level**", "101")
+.addField("**Clan Level**", "102)
 .addField("**Clan Members:**", "OOOPS (leader)\n"
 + "Vortex Gfx\n"
 + "boB_\n"
