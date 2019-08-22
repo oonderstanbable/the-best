@@ -20,11 +20,12 @@ function tL(a){return a.toLowerCase();}
 client.on('guildMemberAdd', member => {
 
 let join = new Discord.RichEmbed()
-.setColor(3987431)
+.setColor(15158332)
+.addField("Welcome, " + member.user.username)
 .addField("Use **__.help__** to see RCS Bot commands", "Make sure to read and follow the rules")
     console.log('User' + member.user.username + 'Has joined the server!')
     console.log(member)
-    member.guild.sendEmbed(join);
+    member.guild.channels.get('614083118667923457').sendEmbed(join);
 });
 
 client.on('message', message => {
