@@ -21,7 +21,7 @@ client.on('guildMemberAdd', member => {
 
 let join = new Discord.RichEmbed()
 .setColor(15158332)
-.addField("Welcome, " + member.user.username)
+.addField("Welcome, " + member.user.username , "Go to #Roles to get your roles")
 .addField("Use **__.help__** to see RCS Bot commands", "Make sure to read and follow the rules")
     console.log('User' + member.user.username + 'Has joined the server!')
     console.log(member)
