@@ -11,16 +11,16 @@ function ball() {
 choices = ["||penis||","era is the best clan","#era gang","get out of my face","you are beautiful just the way you are","you are loved by OOOPS","you will be banned from this server one day","you are gay"];
 return choices[Math.floor(Math.random() * 8)];
 }
-/*
 
+*/
 function iN(a){return/^\d+$/.test(a);}function iO(a){return a.match('^[/*+-]{1}$')==null?!1:!0;}mC={'/':function(a,b){return a/b;},'*':function(a,b){return a*b;},'-':function(a,b){return a-b;},'+':function(a,b){return a+b;}};
 function cL(a){return a.replace(/[\[\]]/g, "");}
 function tL(a){return a.toLowerCase();}
 
-
+/*
 client.on('guildMemberAdd', member => {
 
-/*let join = new Discord.RichEmbed()
+let join = new Discord.RichEmbed()
 .setColor(15158332)
 .addField('**' + member.user.username + '**, has joined era Clan discord', 'Make sure to Follow https://krunker.io/social.html?p=profile&q=OOOPS') 
 .addField("Use **__era help__** to see era Bot commands", "If you want to apply you can go to #【📋】how-to-apply to learn join")
