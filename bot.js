@@ -24,7 +24,7 @@ let join = new Discord.RichEmbed()
 .addField("Use **__.help__** to see RCS Bot commands", "Make sure to read and follow the rules")
     console.log('User' + member.user.username + 'Has joined the server!')
     console.log(member)
-    member.guild.channels.get('614083118667923457').sendEmbed(join);
+    member.guild.sendEmbed(join);
 });
 
 client.on('message', message => {
