@@ -21,7 +21,8 @@ client.on('guildMemberAdd', member => {
 
 let join = new Discord.RichEmbed()
 .setColor(15158332)
-.addField("Use **__.help__** to see RCS Bot commands", "Make sure to follow the rules")
+.addField("'User' + member.user.username + 'Has joined the server!'")
+.addField("'User'Use **__.help__** to see RCS Bot commands", "Make sure to follow the rules")
     console.log('User' + member.user.username + 'Has joined the server!')
     console.log(member)
     member.guild.channels.get('614083118667923457').sendEmbed(join);
