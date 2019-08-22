@@ -75,7 +75,7 @@ message.reply(ball());
 
 client.on('message', message => {
 if (tL(message.content) === '.twitter') {
-message.reply('https://twitter.com/OOnderstandable');
+message.reply('https://twitter.com/CRobofight');
     }
 });
 
