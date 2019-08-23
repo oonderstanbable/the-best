@@ -34,6 +34,12 @@ client.on('message', message => {
     }
   });
 
+client.on('message', message => {
+    if (tL(message.content) === '.rcs') {
+      message.reply(message.author.avatarURL);
+    }
+  });
+
 let invite = new Discord.RichEmbed()
 .setColor(15158332)
 .addField("Created by **OOOPS#9915**", "RCS Bot was Made for the Robofight Competitve Discord server")  
@@ -47,8 +53,7 @@ let commands = new Discord.RichEmbed()
 .addField("Commands Available:", ".avatar\n"
 + ".help\n"
 + ".flip\n"
-+ ".rcs\n"
-+ ".invite")
++ ".rcs")
 client.on('message', message => {
 if (tL(message.content) === '.help') {
 message.channel.sendEmbed(commands);
@@ -62,7 +67,7 @@ message.reply(coinflip());
 });
 
 /*client.on('message', message => {
-if (tL(message.content) === 'era ball') {
+if (tL(message.content) === '.rcs ball') {
 message.reply(ball());
     }
 });*/
