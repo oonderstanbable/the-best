@@ -27,19 +27,11 @@ let join = new Discord.RichEmbed()
     console.log(member)
     member.guild.channels.get('645355625919938572').sendEmbed(join);
 });
-
 client.on('message', message => {
     if (tL(message.content) === '.avatar') {
       message.reply(message.author.avatarURL);
     }
   });
-
-client.on('message', message => {
-    if (tL(message.content) === '.rcs') {
-      message.reply(message.author.avatarURL);
-    }
-  });
-
 let invite = new Discord.RichEmbed()
 .setColor(15158332)
 .addField("Created by **OOOPS#9915**", "DorkBot was made for Robotics Team 333A \"The 7 Dorks\"")  
@@ -53,29 +45,31 @@ let commands = new Discord.RichEmbed()
 .addField("Commands Available:", ".avatar\n"
 + ".help\n"
 + ".flip\n"
++ ".yt\n"
 + ".dorks")
 client.on('message', message => {
 if (tL(message.content) === '.help') {
 message.channel.sendEmbed(commands);
     }
 });
-
 client.on('message', message => {
 if (tL(message.content) === '.flip') {
 message.reply(coinflip());
     }
 });
-
 /*client.on('message', message => {
 if (tL(message.content) === '.rcs ball') {
 message.reply(ball());
     }
 });*/
-
+client.on('message', message => {
+if (tL(message.content) === '.yt') {
+message.reply('https://www.youtube.com/channel/UCQadDVUmUf3N7Uer60B6enA');
+    }
+});
 client.on('message', message => {
 if (tL(message.content) === '.twitter') {
 message.reply('https://twitter.com/The7Dorks1');
     }
 });
-
 client.login(process.env.BOT_TOKEN);
