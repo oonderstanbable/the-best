@@ -22,10 +22,10 @@ client.on('guildMemberAdd', member => {
 let join = new Discord.RichEmbed()
 .setColor(3987431)
 .addField("Welcome, " + member.user.username , "Go to #Roles to get your roles")
-.addField("Use **__.help__** to see RCS Bot commands", "Make sure to read and follow the rules")
+.addField("Use **__.help__** to see DorkBot commands", "Make sure to read and follow the rules")
     console.log('User' + member.user.username + 'Has joined the server!')
     console.log(member)
-    member.guild.channels.get('614083118667923457').sendEmbed(join);
+    member.guild.channels.get('645355625919938572').sendEmbed(join);
 });
 
 client.on('message', message => {
@@ -42,9 +42,9 @@ client.on('message', message => {
 
 let invite = new Discord.RichEmbed()
 .setColor(15158332)
-.addField("Created by **OOOPS#9915**", "RCS Bot was Made for the Robofight Competitve Discord server")  
+.addField("Created by **OOOPS#9915**", "DorkBot was made for Robotics Team 333A \"The 7 Dorks\"")  
 client.on('message', message => {
-if (tL(message.content) === '.rcs') {
+if (tL(message.content) === '.dorks'){
 message.channel.sendEmbed(invite);
     }
 });
@@ -53,7 +53,7 @@ let commands = new Discord.RichEmbed()
 .addField("Commands Available:", ".avatar\n"
 + ".help\n"
 + ".flip\n"
-+ ".rcs")
++ ".dorks")
 client.on('message', message => {
 if (tL(message.content) === '.help') {
 message.channel.sendEmbed(commands);
@@ -74,7 +74,7 @@ message.reply(ball());
 
 client.on('message', message => {
 if (tL(message.content) === '.twitter') {
-message.reply('https://twitter.com/CRobofight');
+message.reply('https://twitter.com/The7Dorks1');
     }
 });
 
