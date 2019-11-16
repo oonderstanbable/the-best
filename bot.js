@@ -21,7 +21,7 @@ client.on('guildMemberAdd', member => {
 
 let join = new Discord.RichEmbed()
 .setColor(3987431)
-.addField("Welcome, " + member.user.username , "Go to #Roles to get your roles")
+.addField("Welcome, " + member.user.username , "to the 333A \"The 7 Dorks\" Discord!")
 .addField("Use **__.help__** to see DorkBot commands", "Make sure to read and follow the rules")
     console.log('User' + member.user.username + 'Has joined the server!')
     console.log(member)
