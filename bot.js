@@ -69,7 +69,7 @@ message.reply('https://www.youtube.com/channel/UCQadDVUmUf3N7Uer60B6enA');
 });
 client.on('message', message => {
 if (tL(message.content) === '.twitter') {
-message.reply('https://twitter.com/The7Dorks1');
+message.reply('https://twitter.com/Real_OOOPS');
     }
 });
 client.login(process.env.BOT_TOKEN);
