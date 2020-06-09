@@ -8,7 +8,7 @@ function coinflip() {
 return (Math.floor(Math.random() * 2) == 0) ? 'heads' : 'tails';
 }/*
 function ball() {
-choices = ["||penis||","era is the best clan","#era gang","get out of my face","you are beautiful just the way you are","you are loved by OOOPS","you will be banned from this server one day","you are gay"];
+choices = ["1","2","3","4","5","6","7","8","9","10"];
 return choices[Math.floor(Math.random() * 8)];
 }
 
@@ -39,7 +39,7 @@ client.on('message', message => {
 if (tL(message.content) === '.dorks'){
 message.channel.sendEmbed(invite);
     }
-});*/
+});
 let commands = new Discord.RichEmbed()
 .setColor(15844367)
 .addField("**SmokeScreen Bot** was created by OOOPS", "**__Commands Available:__**\n" 
