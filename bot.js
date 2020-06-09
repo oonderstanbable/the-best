@@ -68,6 +68,12 @@ message.reply('https://www.youtube.com/channel/UCj2izAeIjae73iHloqvAKfw');
     }
 });
 client.on('message', message => {
+if (tL(message.content) === '.info') {
+message.reply('**SmokeScreen Bot** was created by OOOPS\n'
+'He is the best Cod Mobile player in the **WORLD**');
+    }
+});
+client.on('message', message => {
 if (tL(message.content) === '.twitter') {
 message.reply('https://twitter.com/Real_OOOPS');
     }
