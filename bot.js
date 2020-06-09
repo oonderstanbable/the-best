@@ -53,11 +53,10 @@ message.channel.sendEmbed(invite);
 });
 let commands = new Discord.RichEmbed()
 .setColor(15844367)
-.addField("Commands Available (**Prefix:** .)" , "\> .help\n"
+.addField("**Prefix:** ." , "**Commands**\n"
++ "\> .help\n"
 + "\> .avatar\n"
 + "\> .flip\n"
-+ "\> .yt\n"
-+ "        \n"
 + "**Inhouse Commands**\n"          
 + "\> .5v5\n"
 + "\> .4v4\n"
@@ -90,16 +89,6 @@ message.reply(three());
 });client.on('message', message => {
 if (tL(message.content) === '.2v2') {
 message.reply(two());
-    }
-});
-client.on('message', message => {
-if (tL(message.content) === '.yt') {
-message.reply('https://www.youtube.com/channel/UCj2izAeIjae73iHloqvAKfw');
-    }
-});
-client.on('message', message => {
-if (tL(message.content) === '.twitter') {
-message.reply('https://twitter.com/Real_OOOPS');
     }
 });
 client.login(process.env.BOT_TOKEN);
