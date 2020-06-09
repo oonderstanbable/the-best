@@ -42,8 +42,7 @@ message.channel.sendEmbed(invite);
 });*/
 let commands = new Discord.RichEmbed()
 .setColor(15844367)
-.addField("**SmokeScreen Bot** was created by OOOPS", "Commands Available:\n" 
-+ ".avatar\n"
+.addField("**SmokeScreen Bot** was created by OOOPS", "**__Commands Available:__**\n" 
 + ".help\n"
 + ".flip\n"
 + ".yt\n")
