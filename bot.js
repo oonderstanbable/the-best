@@ -9,15 +9,15 @@ return (Math.floor(Math.random() * 2) == 0) ? 'heads' : 'tails';
 }
 function four() {
 choices = ["1","2","3","4","5","6","7","8"];
-return choices[Math.floor(Math.random() * 10)];
+return choices[Math.floor(Math.random() * 8)];
 }
 function three() {
 choices = ["1","2","3","4","5","6"];
-return choices[Math.floor(Math.random() * 10)];
+return choices[Math.floor(Math.random() * 6)];
 }
 function two() {
 choices = ["1","2","3","4"];
-return choices[Math.floor(Math.random() * 10)];
+return choices[Math.floor(Math.random() * 4)];
 }
 
 function iN(a){return/^\d+$/.test(a);}function iO(a){return a.match('^[/*+-]{1}$')==null?!1:!0;}mC={'/':function(a,b){return a/b;},'*':function(a,b){return a*b;},'-':function(a,b){return a-b;},'+':function(a,b){return a+b;}};
