@@ -53,16 +53,16 @@ message.channel.sendEmbed(invite);
 });
 let commands = new Discord.RichEmbed()
 .setColor(15844367)
-.addField("Commands Available (**Prefix:** ."), "> .help\n"
-+ "> .avatar\n"
-+ "> .flip\n"
-+ "> .yt\n"
+.addField("Commands Available (**Prefix:** ."), "\> .help\n"
++ "\> .avatar\n"
++ "\> .flip\n"
++ "\> .yt\n"
 + "        \n"
 + "**Inhouse Commands**\n"          
-+ "> .5v5\n"
-+ "> .4v4\n"
-+ "> .3v3\n"          
-+ "> .2v2\n")
++ "\> .5v5\n"
++ "\> .4v4\n"
++ "\> .3v3\n"          
++ "\> .2v2\n")
 client.on('message', message => {
 if (tL(message.content) === '.help') {
 message.channel.sendEmbed(commands);
