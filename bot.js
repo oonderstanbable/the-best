@@ -17,7 +17,7 @@ function iN(a){return/^\d+$/.test(a);}function iO(a){return a.match('^[/*+-]{1}$
 function cL(a){return a.replace(/[\[\]]/g, "");}
 function tL(a){return a.toLowerCase();}
 
-client.on('guildMemberAdd', member => {
+/*client.on('guildMemberAdd', member => {
 
 let join = new Discord.RichEmbed()
 .setColor(3987431)
@@ -39,7 +39,7 @@ client.on('message', message => {
 if (tL(message.content) === '.dorks'){
 message.channel.sendEmbed(invite);
     }
-});
+});*/
 let commands = new Discord.RichEmbed()
 .setColor(15844367)
 .addField("Commands Available:", ".avatar\n"
