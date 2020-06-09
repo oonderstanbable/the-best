@@ -17,15 +17,15 @@ function iN(a){return/^\d+$/.test(a);}function iO(a){return a.match('^[/*+-]{1}$
 function cL(a){return a.replace(/[\[\]]/g, "");}
 function tL(a){return a.toLowerCase();}
 
-/*client.on('guildMemberAdd', member => {
+client.on('guildMemberAdd', member => {
 
 let join = new Discord.RichEmbed()
 .setColor(3987431)
-.addField("Welcome, " + member.user.username , "to the 333A \"The 7 Dorks\" Discord!")
-.addField("Use **__.help__** to see DorkBot commands", "Make sure to read and follow the rules")
+.addField("Welcome, " + member.user.username , "to the SmokeScreen Clan Discord!")
+.addField("Use **__.help__** to see SmokeScreen bot commands", "Make sure to read and follow the rules")
     console.log('User' + member.user.username + 'Has joined the server!')
     console.log(member)
-    member.guild.channels.get('645355625919938572').sendEmbed(join);
+    member.guild.channels.get('719725431967842377').sendEmbed(join);
 });
 client.on('message', message => {
     if (tL(message.content) === '.avatar') {
@@ -44,6 +44,7 @@ let commands = new Discord.RichEmbed()
 .setColor(15844367)
 .addField("**SmokeScreen Bot** was created by OOOPS", "**__Commands Available:__**\n" 
 + ".help\n"
++ ".avatar\n"
 + ".flip\n"
 + ".yt\n")
 client.on('message', message => {
