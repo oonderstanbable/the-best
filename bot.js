@@ -7,6 +7,10 @@ client.user.setStatus('dnd')
 function coinflip() {
 return (Math.floor(Math.random() * 2) == 0) ? 'heads' : 'tails';
 }
+function five() {
+choices = ["1","2","3","4","5","6","7","8","9","10"];
+return choices[Math.floor(Math.random() * 10)];
+}
 function four() {
 choices = ["1","2","3","4","5","6","7","8"];
 return choices[Math.floor(Math.random() * 8)];
@@ -70,7 +74,7 @@ message.reply(coinflip());
 });
 client.on('message', message => {
 if (tL(message.content) === '.5v5') {
-message.reply(ball());
+message.reply(five());
     }
 });
 client.on('message', message => {
