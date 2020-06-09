@@ -6,13 +6,20 @@ client.user.setStatus('dnd')
 });
 function coinflip() {
 return (Math.floor(Math.random() * 2) == 0) ? 'heads' : 'tails';
-}/*
-function ball() {
-choices = ["1","2","3","4","5","6","7","8","9","10"];
-return choices[Math.floor(Math.random() * 8)];
+}
+function four() {
+choices = ["1","2","3","4","5","6","7","8"];
+return choices[Math.floor(Math.random() * 10)];
+}
+function three() {
+choices = ["1","2","3","4","5","6"];
+return choices[Math.floor(Math.random() * 10)];
+}
+function two() {
+choices = ["1","2","3","4"];
+return choices[Math.floor(Math.random() * 10)];
 }
 
-*/
 function iN(a){return/^\d+$/.test(a);}function iO(a){return a.match('^[/*+-]{1}$')==null?!1:!0;}mC={'/':function(a,b){return a/b;},'*':function(a,b){return a*b;},'-':function(a,b){return a-b;},'+':function(a,b){return a+b;}};
 function cL(a){return a.replace(/[\[\]]/g, "");}
 function tL(a){return a.toLowerCase();}
@@ -46,7 +53,11 @@ let commands = new Discord.RichEmbed()
 + ".help\n"
 + ".avatar\n"
 + ".flip\n"
-+ ".yt\n")
++ ".yt\n"
++ ".5v5\n"
++ ".4v4\n"
++ ".3v3\n"          
++ ".2v2\n")
 client.on('message', message => {
 if (tL(message.content) === '.help') {
 message.channel.sendEmbed(commands);
@@ -57,11 +68,25 @@ if (tL(message.content) === '.flip') {
 message.reply(coinflip());
     }
 });
-/*client.on('message', message => {
-if (tL(message.content) === '.rcs ball') {
+client.on('message', message => {
+if (tL(message.content) === '.5v5') {
 message.reply(ball());
     }
-});*/
+});
+client.on('message', message => {
+if (tL(message.content) === '.4v4') {
+message.reply(four());
+    }
+});
+client.on('message', message => {
+if (tL(message.content) === '.3v3') {
+message.reply(three());
+    }
+});client.on('message', message => {
+if (tL(message.content) === '.2v2') {
+message.reply(two());
+    }
+});
 client.on('message', message => {
 if (tL(message.content) === '.yt') {
 message.reply('https://www.youtube.com/channel/UCj2izAeIjae73iHloqvAKfw');
