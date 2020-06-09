@@ -64,7 +64,7 @@ message.reply(ball());
 });*/
 client.on('message', message => {
 if (tL(message.content) === '.yt') {
-message.reply('https://www.youtube.com/channel/UCQadDVUmUf3N7Uer60B6enA');
+message.reply('https://www.youtube.com/channel/UCj2izAeIjae73iHloqvAKfw');
     }
 });
 client.on('message', message => {
