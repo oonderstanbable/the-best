@@ -42,11 +42,11 @@ message.channel.sendEmbed(invite);
 });*/
 let commands = new Discord.RichEmbed()
 .setColor(15844367)
-.addField("Commands Available:", ".avatar\n"
+.addField("**SmokeScreen Bot** was created by OOOPS", "Commands Available:\n" 
++ ".avatar\n"
 + ".help\n"
 + ".flip\n"
-+ ".yt\n"
-+ ".dorks")
++ ".yt\n")
 client.on('message', message => {
 if (tL(message.content) === '.help') {
 message.channel.sendEmbed(commands);
@@ -65,12 +65,6 @@ message.reply(ball());
 client.on('message', message => {
 if (tL(message.content) === '.yt') {
 message.reply('https://www.youtube.com/channel/UCj2izAeIjae73iHloqvAKfw');
-    }
-});
-client.on('message', message => {
-if (tL(message.content) === '.info') {
-message.reply('**SmokeScreen Bot** was created by OOOPS\n'
-+ 'He is the best Cod Mobile player in the **WORLD**');
     }
 });
 client.on('message', message => {
