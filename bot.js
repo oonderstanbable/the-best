@@ -48,6 +48,16 @@ let scrims = new Discord.RichEmbed()
 .addField("‎\n", "**=============**\n" 
 + "**__Smoke E-Sports Scrim Schduele__**\n"
 + "‎\n"
++ "**Monday:**\n"
++ "‎\n"
++ "**Tueday**\n"
++ "‎\n"
++ "**Wednesday**\n"
++ "‎\n"
++ "**Thursday**\n"
++ "‎\n"
++ "**Friday**\n"
++ "‎\n"
 + "**=============**\n")  
 client.on('message', message => {
 if (tL(message.content) === '.scrims'){
