@@ -93,16 +93,16 @@ message.channel.send(five());
 
 
 if (tL(message.content) === '.4v4') {
-message.reply(four());
+message.channel.send(four());
     }
 
 
 if (tL(message.content) === '.3v3') {
-message.reply(three());
+message.channel.send(three());
     }
 
 if (tL(message.content) === '.2v2') {
-message.reply(two());
+message.channel.send(two());
     }
 });
 client.login(process.env.BOT_TOKEN);
