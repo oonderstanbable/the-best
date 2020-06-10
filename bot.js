@@ -1,11 +1,11 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 
-    const ttt = require("discord.js-tictactoe")
-    const prefix = "."
-    const embed_color = "#ff00aa"
-    const start_cmd = "ttt"
-    ttt.run(client, prefix, embed_color, start_cmd)
+const reactionrem = require('discord.js-remove-on-reaction')
+client.on("message", message => { 
+message.channel.send('Test') 
+ .then(message => reactionrem(message, client)) 
+})
 
 client.on('ready' , () => {
     client.user.setStatus('dnd');
