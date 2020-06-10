@@ -88,7 +88,7 @@ message.reply(coinflip());
     }
 
 if (tL(message.content) === '.5v5') {
-message.channel(five());
+message.channel.send(five());
     }
 
 
