@@ -38,11 +38,7 @@ let join = new Discord.RichEmbed()
     console.log(member)
     member.guild.channels.get('719725431967842377').sendEmbed(join);
 });
-client.on('message', message => {
-    if (tL(message.content) === '.avatar') {
-      message.reply(message.author.avatarURL);
-    }
-  });
+
 let scrims = new Discord.RichEmbed()
 .setColor(15158332)
 .addField("‎\n", "**=============**\n" 
@@ -50,13 +46,13 @@ let scrims = new Discord.RichEmbed()
 + "‎\n"
 + "**Monday:**\n"
 + "‎\n"
-+ "**Tueday**\n"
++ "**Tueday:**\n"
 + "‎\n"
-+ "**Wednesday**\n"
++ "**Wednesday:**\n"
 + "‎\n"
-+ "**Thursday**\n"
++ "**Thursday:**\n"
 + "‎\n"
-+ "**Friday**\n"
++ "**Friday:**\n"
 + "‎\n"
 + "**=============**\n")  
 client.on('message', message => {
@@ -64,6 +60,7 @@ if (tL(message.content) === '.scrims'){
 message.channel.sendEmbed(scrims);
     }
 });
+
 let commands = new Discord.RichEmbed()
 .setColor(15844367)
 .addField("**Prefix:** ." , "**Commands**\n"
@@ -81,25 +78,29 @@ message.channel.sendEmbed(commands);
     }
 });
 client.on('message', message => {
+    if (tL(message.content) === '.avatar') {
+      message.reply(message.author.avatarURL);
+    }
+ 
+
 if (tL(message.content) === '.flip') {
 message.reply(coinflip());
     }
-});
-client.on('message', message => {
+
 if (tL(message.content) === '.5v5') {
 message.channel(five());
     }
-});
-client.on('message', message => {
+
+
 if (tL(message.content) === '.4v4') {
 message.reply(four());
     }
-});
-client.on('message', message => {
+
+
 if (tL(message.content) === '.3v3') {
 message.reply(three());
     }
-});client.on('message', message => {
+
 if (tL(message.content) === '.2v2') {
 message.reply(two());
     }
