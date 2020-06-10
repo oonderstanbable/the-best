@@ -56,7 +56,7 @@ let scrims = new Discord.RichEmbed()
 + "‎\n"
 + "**=============**\n")  
 client.on('message', message => {
-if (tL(message.content) === '.scrims'){
+if (tL(message.content) === '.ss'){
 message.channel.sendEmbed(scrims);
     }
 });
@@ -71,7 +71,9 @@ let commands = new Discord.RichEmbed()
 + "\> .5v5\n"
 + "\> .4v4\n"
 + "\> .3v3\n"          
-+ "\> .2v2\n")
++ "\> .2v2\n"
++ "**Clan Commands**\n"
++ "\> .ss\n" )
 client.on('message', message => {
 if (tL(message.content) === '.help') {
 message.channel.sendEmbed(commands);
