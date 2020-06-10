@@ -1,11 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 
-const reactionrem = require('discord.js-remove-on-reaction')
-client.on("message", message => { 
-message.channel.send('Test') 
- .then(message => reactionrem(message, client)) 
-})
 
 client.on('ready' , () => {
     client.user.setStatus('dnd');
