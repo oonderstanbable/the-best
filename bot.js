@@ -5,6 +5,10 @@ const client = new Discord.Client();
 client.on('ready' , () => {
     client.user.setStatus('dnd');
 });
+client.once('ready', () => {
+	console.log('Ready!');
+});
+
 function coinflip() {
 return (Math.floor(Math.random() * 2) == 0) ? 'heads' : 'tails';
 }
