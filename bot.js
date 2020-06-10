@@ -68,6 +68,7 @@ let commands = new Discord.RichEmbed()
 + "\> .help\n"
 + "\> .avatar\n"
 + "\> .flip\n"
++ "\> .server\n"
 + "**Inhouse Commands**\n"          
 + "\> .5v5\n"
 + "\> .4v4\n"
@@ -99,14 +100,22 @@ if (tL(message.content) === '.4v4') {
 message.channel.send(four());
     }
     
-if (tL(message.content) === 'server') {
-	message.channel.send(`Server name: ${message.guild.name}\nTotal members: ${message.guild.memberCount}`);
+if (tL(message.content) === '.server') {
+	message.channel.send(`**Server name:** ${message.guild.name}\n**Total members:** ${message.guild.memberCount}`);
 }
     
 if (tL(message.content) === '.3v3') {
 message.channel.send(three());
     }
+if (tL(message.content) === '.kick') {
+		if (!message.mentions.users.size) {
+			return message.reply('you need to tag a user in order to kick them!');
+		}
 
+		const taggedUser = message.mentions.users.first();
+
+		message.channel.send(`You wanted to kick: ${taggedUser.username}`);
+	}
 if (tL(message.content) === '.2v2') {
 message.channel.send(two());
     }
