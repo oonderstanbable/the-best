@@ -43,12 +43,12 @@ client.on('message', message => {
       message.reply(message.author.avatarURL);
     }
   });
-let invite = new Discord.RichEmbed()
+let scrims = new Discord.RichEmbed()
 .setColor(15158332)
-.addField("Created by **OOOPS#9915**", "DorkBot was made for Robotics Team 333A \"The 7 Dorks\"")  
+.addField("**__Smoke E-Sports Scrim Schduele__**\n")  
 client.on('message', message => {
-if (tL(message.content) === '.dorks'){
-message.channel.sendEmbed(invite);
+if (tL(message.content) === '.scrims'){
+message.channel.sendEmbed(scrims);
     }
 });
 let commands = new Discord.RichEmbed()
