@@ -98,8 +98,11 @@ message.channel.send(five());
 if (tL(message.content) === '.4v4') {
 message.channel.send(four());
     }
-
-
+    
+if (tL(message.content) === 'server') {
+	message.channel.send(`Server name: ${message.guild.name}\nTotal members: ${message.guild.memberCount}`);
+}
+    
 if (tL(message.content) === '.3v3') {
 message.channel.send(three());
     }
