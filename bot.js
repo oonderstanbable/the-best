@@ -45,9 +45,10 @@ client.on('message', message => {
   });
 let scrims = new Discord.RichEmbed()
 .setColor(15158332)
-.addField("‎" , "**=============**\n" 
+.addField("\n" 
++ "**=============**\n" 
 + "**__Smoke E-Sports Scrim Schduele__**\n"
-+ "‎\n"
++ "\n"
 + "**=============**\n")  
 client.on('message', message => {
 if (tL(message.content) === '.scrims'){
