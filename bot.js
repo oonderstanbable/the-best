@@ -41,7 +41,7 @@ let join = new Discord.RichEmbed()
     member.guild.channels.get('720453687104766032').sendEmbed(join);
 });
 
-let scrims = new Discord.RichEmbed()
+/*let scrims = new Discord.RichEmbed()
 .setColor(15158332)
 .addField("‎\n", "**=============**\n" 
 + "**__Smoke E-Sports Scrim Schduele__**\n"
@@ -61,7 +61,7 @@ client.on('message', message => {
 if (tL(message.content) === '.ss'){
 message.channel.sendEmbed(scrims);
     }
-});
+});*/
 let commands = new Discord.RichEmbed()
 .setColor(15844367)
 .addField("**Prefix:** ." , "**Commands**\n"
@@ -75,7 +75,7 @@ let commands = new Discord.RichEmbed()
 + "\> .3v3\n"          
 + "\> .2v2\n"
 + "**Clan Commands**\n"
-+ "\> .ss\n" )
++ "\n" )
 client.on('message', message => {
 if (tL(message.content) === '.help') {
 message.channel.sendEmbed(commands);
@@ -98,16 +98,10 @@ message.channel.send(five());
 if (tL(message.content) === '.4v4') {
 message.channel.send(four());
     }
-if(tL(message.content)=== '@SmokeScreen Bot') {
-	message.channel.send('boi What the fuck do you want?')
-}
+
 if (tL(message.content) === '.server') {
 	message.channel.send(`**Server name:** ${message.guild.name}\n**Total members:** ${message.guild.memberCount}`);
 }
-	
-if(tL(message.content)=== 'Nigger') {
-	message.delete();
-} 
 if (tL(message.content) === '.3v3') {
 message.channel.send(three());
     }
