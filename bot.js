@@ -2,10 +2,18 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 
 
-client.on('ready' , () => {
+/*client.on('ready' , () => {
     client.user.setStatus('dnd');
-});
-
+});*/
+client.on("ready", () => {
+    client.user.setPresence({
+        game: { 
+            name: 'my code',
+            type: 'WATCHING'
+        },
+        status: 'dnd'
+    })
+})
 function coinflip() {
 return (Math.floor(Math.random() * 2) == 0) ? 'heads' : 'tails';
 }
