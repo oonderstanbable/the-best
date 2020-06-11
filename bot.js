@@ -70,6 +70,7 @@ let commands = new Discord.RichEmbed()
 + "\> .avatar\n"
 + "\> .flip\n"
 + "\> .server\n"
++ "\> .ui\n"
 + "**Inhouse Commands**\n"          
 + "\> .5v5\n"
 + "\> .4v4\n"
