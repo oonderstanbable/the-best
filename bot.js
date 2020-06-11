@@ -62,7 +62,10 @@ if (tL(message.content) === '.ss'){
 message.channel.sendEmbed(scrims);
     }
 });
-
+if (tL(message.content) === 'tour guide'){
+message.channel.send('@Pain#9599');
+    }
+});
 let commands = new Discord.RichEmbed()
 .setColor(15844367)
 .addField("**Prefix:** ." , "**Commands**\n"
