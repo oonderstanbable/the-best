@@ -99,7 +99,9 @@ message.channel.send(five());
 if (tL(message.content) === '.4v4') {
 message.channel.send(four());
     }
-    
+if(tL(message.content)=== '@SmokeScreen Bot') {
+	message.channel.send('boi What the fuck do you want?')
+}
 if (tL(message.content) === '.server') {
 	message.channel.send(`**Server name:** ${message.guild.name}\n**Total members:** ${message.guild.memberCount}`);
 }
