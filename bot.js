@@ -112,5 +112,9 @@ if (tL(message.content) === '.3v3') {
 message.channel.send(three());
     }
  
+if (tL(message.content) === '.2v2') {
+message.channel.send(two());
+    }
+ 
 });
 client.login(process.env.BOT_TOKEN);
