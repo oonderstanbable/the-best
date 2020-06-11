@@ -66,7 +66,6 @@ let commands = new Discord.RichEmbed()
 .setColor(15844367)
 .addField("**Prefix:** ." , "**Commands**\n"
 + "\> .help\n"
-+ "\> .avatar\n"
 + "\> .flip\n"
 + "\> .server\n"
 + "\> .ui\n"
@@ -101,7 +100,7 @@ message.channel.send(five());
 if (tL(message.content) === '.4v4') {
 message.channel.send(four());
     }
-if(tL(message.content)=== '@SmokeScreen Bot#6935') {
+if(tL(message.content)=== '@SmokeScreen Bot') {
 	message.channel.send('boi What the fuck do you want?')
 }
 if (tL(message.content) === '.server') {
