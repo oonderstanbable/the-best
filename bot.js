@@ -38,7 +38,7 @@ let join = new Discord.RichEmbed()
 .addField("Use **__.help__** to see SmokeScreen bot commands", "Make sure to read and follow the rules")
     console.log('User' + member.user.username + 'Has joined the server!')
     console.log(member)
-    member.guild.channels.get('719725431967842377').sendEmbed(join);
+    member.guild.channels.get('720453687104766032').sendEmbed(join);
 });
 
 let scrims = new Discord.RichEmbed()
