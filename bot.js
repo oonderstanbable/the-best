@@ -2,18 +2,10 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 
 
-/*client.on('ready' , () => {
+client.on('ready' , () => {
     client.user.setStatus('dnd');
-});*/
-client.on("ready", () => {
-    client.user.setPresence({
-        game: { 
-            name: 'my code',
-            type: 'WATCHING'
-        },
-        status: 'dnd'
-    })
-})
+});
+
 function coinflip() {
 return (Math.floor(Math.random() * 2) == 0) ? 'heads' : 'tails';
 }
@@ -97,9 +89,7 @@ client.on('message', message => {
 if (tL(message.content) === '.flip') {
 message.reply(coinflip());
     }
-if (tL(message.content) === 'tour guide'){
-message.channel.send('@Pain#9599');
-}
+	
 if (tL(message.content) === '.5v5') {
 message.channel.send(five());
     }
@@ -114,7 +104,10 @@ if(tL(message.content)=== '@SmokeScreen Bot') {
 if (tL(message.content) === '.server') {
 	message.channel.send(`**Server name:** ${message.guild.name}\n**Total members:** ${message.guild.memberCount}`);
 }
-    
+	
+if(tL(message.content)=== 'Nigger') {
+	message.delete();
+} 
 if (tL(message.content) === '.3v3') {
 message.channel.send(three());
     }
