@@ -83,11 +83,9 @@ message.channel.sendEmbed(commands);
     }
 });
 client.on('message', message => {
-     {
-      message.reply(message.author.avatarURL);
-    }
+     
  if (tL(message.content) === '.ui') {
-	 message.channel.send(`**Your username:** ${message.author.username}\n**Your ID:** ${message.author.id}\n **Your Avatar:** tL(message.content)`);
+	 message.channel.send(`**Your username:** ${message.author.username}\n**Your ID:** ${message.author.id}\n **Your Avatar:** ${message.author.avatarURL}`);
  }
 if (tL(message.content) === '.flip') {
 message.reply(coinflip());
